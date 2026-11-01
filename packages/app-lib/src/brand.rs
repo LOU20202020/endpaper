@@ -1,14 +1,14 @@
-pub const PRODUCT_NAME: &str = "Axolotl Launcher";
-pub const SHORT_PRODUCT_NAME: &str = "Axolotl";
-pub const WEBSITE: &str = "https://www.ghs.red";
-pub const BUNDLE_IDENTIFIER: &str = "red.ghs.axolotl";
-pub const DEEP_LINK_SCHEME: &str = "axolotl";
+pub const PRODUCT_NAME: &str = "Endpaper";
+pub const SHORT_PRODUCT_NAME: &str = "Endpaper";
+pub const WEBSITE: &str = "https://github.com/LOU20202020/endpaper";
+pub const BUNDLE_IDENTIFIER: &str = "com.lou0122.endpaper";
+pub const DEEP_LINK_SCHEME: &str = "endpaper";
 
 /// Longest accepted data directory suffix; enough to name a branch or a build.
 const MAX_DATA_DIR_SUFFIX_LEN: usize = 32;
 
 pub fn user_agent(version: &str, os: &str) -> String {
-    format!("Axolotl-Launcher/{version} ({os})")
+    format!("Endpaper/{version} ({os})")
 }
 
 /// Name of the directory the launcher keeps its settings, databases and logs in.

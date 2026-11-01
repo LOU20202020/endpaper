@@ -802,7 +802,9 @@ impl State {
             // so a generous ceiling turns "no longer hangs" into "hangs for minutes"
             // for every caller that can never succeed. Callers that must not wait at
             // all can use `get_if_initialized` instead.
-            const MAX_WAIT: Duration = Duration::from_secs(10);
+            // [Endpaper] 10s 在冷启动 + 国内网络下太紧（首次建库/迁移会顶到上限，
+            // 用户看到的就是「启动器打不开」）。放宽到 60s，热启动仍然是毫秒级返回。
+            const MAX_WAIT: Duration = Duration::from_secs(60);
             // Keep the existing poll cadence: it is cheap next to the startup work
             // and keeps this loop from interacting with the OnceCell any differently
             // than it did before.
