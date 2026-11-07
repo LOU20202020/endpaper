@@ -7391,7 +7391,7 @@ dependencies = [
 
 [[package]]
 name = "theseus_gui"
-version = "1.10.5"
+version = "1.1.0"
 dependencies = [
  "ashpd",
  "async_zip",
