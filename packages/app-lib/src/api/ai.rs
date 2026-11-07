@@ -23,7 +23,7 @@ use crate::state::documents;
 use crate::state::documents::ai::{AiDocument, ProviderConfig};
 use crate::{ErrorKind, State};
 
-const CATALOG_SOURCE: &str = "LobeHub 483c4a343e437bf6e812b5f71a9a47ce7b5c7be4";
+const CATALOG_SOURCE: &str = "LobeHub 47bd681c0b3f91edc5e1bc6ab5d634a4b1311d31";
 const KEYRING_PREFIX: &str = "ai-provider";
 const OAUTH_CREDENTIAL: &str = "oauth";
 const API_KEY_CREDENTIAL: &str = "api-key";
