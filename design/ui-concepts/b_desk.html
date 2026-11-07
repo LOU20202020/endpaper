@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1280px;height:800px;overflow:hidden}
+  body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;position:relative;
+    background:
+      radial-gradient(900px 640px at 24% 0%, rgba(255,214,152,.30), transparent 62%),
+      radial-gradient(700px 520px at 82% 92%, rgba(0,0,0,.55), transparent 72%),
+      repeating-linear-gradient(102deg, rgba(255,255,255,.02) 0 2px, transparent 2px 11px),
+      linear-gradient(165deg,#4e3826,#2f2115 56%,#1a1109)}
+  body::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+  .vig{position:absolute;inset:0;background:radial-gradient(115% 95% at 44% 44%,transparent 48%,rgba(0,0,0,.62))}
+
+  .book{position:absolute;left:252px;top:118px;width:826px;height:592px;transform:rotate(-.7deg);
+    display:flex;border-radius:4px;
+    box-shadow:28px 36px 64px rgba(0,0,0,.75), 0 0 0 1px rgba(0,0,0,.55)}
+  .cover{position:absolute;inset:-15px;border-radius:6px;
+    background:linear-gradient(150deg,#20304e,#121b2d 58%,#0a0e16);
+    box-shadow:inset 0 0 0 1px rgba(240,214,150,.2)}
+  .page{position:relative;width:50%;height:100%;padding:44px 42px 38px;
+    background:linear-gradient(112deg,#fcf6e8,#f4ead4 60%,#e9ddc3);color:#231c13;overflow:hidden}
+  .page.l{border-radius:4px 0 0 4px;background:linear-gradient(112deg,#f8f0de,#f0e5ce 68%,#e0d3b7)}
+  .page.r{border-radius:0 4px 4px 0;box-shadow:-18px 0 34px rgba(0,0,0,.22) inset}
+  .gully{position:absolute;left:50%;top:0;bottom:0;width:86px;transform:translateX(-50%);pointer-events:none;
+    background:linear-gradient(90deg,rgba(0,0,0,0),rgba(60,44,24,.12) 32%,rgba(24,16,6,.42) 50%,rgba(60,44,24,.12) 68%,rgba(0,0,0,0))}
+  .page::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4'/></filter><rect width='180' height='180' filter='url(%23p)'/></svg>")}
+
+  .rh{display:flex;justify-content:space-between;align-items:baseline;
+    font-size:9.5px;letter-spacing:.32em;color:#8a7756;text-transform:uppercase;
+    border-bottom:1px solid rgba(90,70,45,.25);padding-bottom:9px;margin-bottom:18px}
+  .rh span:last-child{letter-spacing:.16em;color:#9c8a66}
+
+  .toc-title{font-family:Georgia,"宋体",serif;font-size:27px;letter-spacing:.16em}
+  .toc-sub{font-size:10px;color:#8a7756;letter-spacing:.26em;margin:5px 0 22px}
+  .toc a{display:flex;align-items:baseline;text-decoration:none;color:#231c13;
+    font-size:15px;padding:11px 0;letter-spacing:.05em}
+  .toc a .n{font-family:Georgia,serif;font-size:10px;color:#a0906f;width:24px}
+  .toc a .dots{flex:1;border-bottom:1.5px dotted rgba(70,55,35,.42);margin:0 10px 4px}
+  .toc a .pg{font-family:Georgia,serif;font-size:12px;color:#8a7756}
+  .toc a.on{font-weight:700}
+  .toc a.on .pg{color:#a8552f}
+  .foot{position:absolute;left:42px;right:42px;bottom:24px;display:flex;justify-content:space-between;
+    font-size:9.5px;letter-spacing:.28em;color:#a2916d}
+
+  .kicker{font-size:9.5px;letter-spacing:.34em;color:#a8552f;text-transform:uppercase}
+  .title{font-family:Georgia,"宋体",serif;font-size:30px;line-height:1.25;margin:10px 0 7px}
+  .sub{font-size:11.5px;color:#77664a;letter-spacing:.06em;line-height:1.7}
+  .rows{margin-top:18px}
+  .row{display:flex;align-items:baseline;font-size:12.5px;padding:7px 0;color:#3a3021}
+  .row .dots{flex:1;border-bottom:1.5px dotted rgba(70,55,35,.35);margin:0 9px 4px}
+  .row .v{font-family:Georgia,serif;font-size:12px;color:#231c13}
+  .play{position:absolute;left:42px;right:42px;bottom:64px;height:62px;display:flex;align-items:center;
+    justify-content:space-between;padding:0 22px;border-radius:2px;cursor:pointer;
+    background:linear-gradient(180deg,#2d3c5c,#18202f);color:#f6e9c8;
+    box-shadow:7px 9px 22px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.18)}
+  .play .t{font-size:16px;letter-spacing:.3em;font-family:Georgia,"宋体",serif}
+  .play .s{font-size:9.5px;letter-spacing:.18em;color:rgba(246,233,200,.62);margin-top:3px}
+  .stamp{width:44px;height:44px;border:2px solid #b23b2b;border-radius:3px;color:#b23b2b;
+    display:grid;place-items:center;font-family:"宋体",serif;font-size:14px;transform:rotate(-7deg)}
+
+  /* 左边：一摞实体书 */
+  .stack{position:absolute;left:62px;top:186px;width:186px;perspective:800px}
+  .stack-h{font-size:9.5px;letter-spacing:.28em;color:rgba(244,232,210,.5);margin-bottom:14px}
+  .vol{position:relative;height:52px;margin-bottom:9px;border-radius:2px 3px 3px 2px;
+    display:flex;align-items:center;padding:0 14px 0 18px;font-size:12.5px;letter-spacing:.08em;color:#f5e0b0;
+    box-shadow:10px 14px 26px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.18),
+      inset -5px 0 9px rgba(0,0,0,.5)}
+  .vol::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:9px;
+    background:repeating-linear-gradient(180deg,#efe6d0 0 2px,#cbbb98 2px 3px);border-radius:2px 0 0 2px}
+  .vol .m{margin-left:auto;font-size:9px;letter-spacing:.12em;opacity:.62}
+  .vol:nth-child(2){transform:rotate(-1.6deg)}
+  .vol:nth-child(3){transform:rotate(1deg);margin-left:8px;width:172px}
+  .vol:nth-child(4){transform:rotate(-.6deg);margin-left:-2px;width:180px}
+  .v1{background:linear-gradient(90deg,#3d1417,#8a2f31 30%,#712527 70%,#2c0e10)}
+  .v2{background:linear-gradient(90deg,#16291f,#35634b 30%,#2a5540 70%,#10201a)}
+  .v3{background:linear-gradient(90deg,#4a2f10,#9c7026 30%,#855f20 70%,#3a250c)}
+  .v4{background:linear-gradient(90deg,#1e242c,#46525f 30%,#3a4652 70%,#161b21)}
+
+  /* 右边：便签 + 铅笔 */
+  .pad{position:absolute;right:58px;top:156px;width:198px;padding:18px 16px;
+    background:linear-gradient(160deg,#f9f2e0,#eadfc3);color:#2b2419;transform:rotate(2.2deg);
+    box-shadow:14px 18px 36px rgba(0,0,0,.62), inset 0 0 0 1px rgba(120,100,70,.16)}
+  .pad::before{content:"";position:absolute;left:16px;top:-10px;width:34px;height:34px;
+    border:2.6px solid #85868b;border-radius:50%;border-bottom-color:transparent;
+    border-right-color:transparent;transform:rotate(45deg);box-shadow:0 2px 5px rgba(0,0,0,.35)}
+  .pad h4{font-size:9.5px;letter-spacing:.3em;color:#8a7756;text-transform:uppercase;margin-bottom:9px}
+  .pad .big{font-family:Georgia,serif;font-size:28px}
+  .pad p{font-size:11px;line-height:1.9;color:#453927;margin-top:8px}
+  .line{border-top:1px dashed rgba(90,70,45,.35);margin:11px 0}
+  .acct{display:flex;justify-content:space-between;font-size:11px;color:#332a1c}
+  .pencil{position:absolute;right:96px;bottom:96px;width:12px;height:186px;transform:rotate(21deg);
+    background:linear-gradient(90deg,#d9a54c,#f4cc80 40%,#b8832f);border-radius:2px;
+    box-shadow:12px 16px 26px rgba(0,0,0,.6)}
+  .pencil::before{content:"";position:absolute;left:0;right:0;bottom:-16px;height:16px;
+    background:linear-gradient(180deg,#ead7b2,#c9a97c);clip-path:polygon(0 0,100% 0,50% 100%)}
+  .pencil::after{content:"";position:absolute;left:0;right:0;bottom:-16px;height:7px;
+    background:#2b2b30;clip-path:polygon(0 0,100% 0,50% 100%)}
+  .ring{position:absolute;left:186px;bottom:56px;width:126px;height:126px;border-radius:50%;
+    border:11px solid rgba(74,42,18,.20);
+    box-shadow:inset 0 0 26px rgba(74,42,18,.14), 6px 8px 18px rgba(0,0,0,.35);
+    transform:rotate(-4deg) scale(1.02)}
+  .ring::after{content:"";position:absolute;inset:-16px;border-radius:50%;
+    border:5px solid rgba(74,42,18,.07)}
+</style></head><body>
+<div class="vig"></div>
+
+<div class="stack">
+  <div class="stack-h">书 架 上 的 其 他</div>
+  <div class="vol v1">生电服 <span class="m">26.3 · 原版</span></div>
+  <div class="vol v2">书籍制作工具 <span class="m">测试</span></div>
+  <div class="vol v3">Fabric 26.3 <span class="m">原版手感</span></div>
+  <div class="vol v4">备份档 <span class="m">10.28</span></div>
+</div>
+
+<div class="book">
+  <div class="cover"></div>
+  <div class="page l">
+    <div class="rh"><span>Endpaper</span><span>目录 · ⅰ</span></div>
+    <div class="toc-title">目 录</div>
+    <div class="toc-sub">CONTENTS</div>
+    <div class="toc">
+      <a class="on"><span class="n">01</span><span>书架</span><span class="dots"></span><span class="pg">01</span></a>
+      <a><span class="n">02</span><span>下载</span><span class="dots"></span><span class="pg">17</span></a>
+      <a><span class="n">03</span><span>实例设置</span><span class="dots"></span><span class="pg">42</span></a>
+      <a><span class="n">04</span><span>账号</span><span class="dots"></span><span class="pg">58</span></a>
+      <a><span class="n">05</span><span>日志</span><span class="dots"></span><span class="pg">73</span></a>
+      <a><span class="n">06</span><span>关于本册</span><span class="dots"></span><span class="pg">96</span></a>
+    </div>
+    <div class="foot"><span>LOU0122</span><span>MMXXVI</span></div>
+  </div>
+  <div class="page r">
+    <div class="rh"><span>正在读</span><span>书架 · ⅱ</span></div>
+    <div class="kicker">当前打开的一本</div>
+    <div class="title">Axolotl 88 Mod</div>
+    <div class="sub">1.21.1 · NeoForge · 88 个模组<br>上次 10 月 28 日，游玩 47 分钟</div>
+    <div class="rows">
+      <div class="row"><span>已分配内存</span><span class="dots"></span><span class="v">6 GB</span></div>
+      <div class="row"><span>Java</span><span class="dots"></span><span class="v">21.0.12</span></div>
+      <div class="row"><span>本次启动</span><span class="dots"></span><span class="v">约 2 分 10 秒</span></div>
+    </div>
+    <div class="play">
+      <div><div class="t">开 始 游 戏</div><div class="s">LAUNCH THIS BOOK</div></div>
+      <div class="stamp">启</div>
+    </div>
+    <div class="foot"><span>ⅱ</span><span>Axolotl 88 Mod</span></div>
+  </div>
+  <div class="gully"></div>
+</div>
+
+<div class="pad">
+  <h4>Bookmark</h4>
+  <div class="big">11 / 01</div>
+  <p>星期日 · 今日无游玩记录</p>
+  <div class="line"></div>
+  <div class="acct"><span>LOU0122</span><span style="opacity:.55">已登录</span></div>
+</div>
+<div class="pencil"></div>
+<div class="ring"></div>
+</body></html>

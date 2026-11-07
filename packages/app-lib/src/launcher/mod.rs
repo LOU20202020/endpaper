@@ -2865,7 +2865,7 @@ pub async fn launch_minecraft(
     // loader. Append these after profile-provided JVM arguments so custom
     // arguments cannot accidentally replace the launcher's identity.
     command
-        .arg("-Dminecraft.launcher.brand=Axolotl Launcher")
+        .arg("-Dminecraft.launcher.brand=Endpaper")
         .arg(format!(
             "-Dminecraft.launcher.version={}",
             env!("CARGO_PKG_VERSION")

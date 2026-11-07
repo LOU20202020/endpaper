@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1280px;height:800px;overflow:hidden}
+  body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;position:relative;color:#f0e5d4;
+    background:
+      radial-gradient(760px 560px at 18% 2%, rgba(255,206,138,.24), transparent 60%),
+      radial-gradient(900px 700px at 88% 98%, rgba(0,0,0,.6), transparent 70%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,.022) 0 1px, transparent 1px 9px),
+      linear-gradient(180deg,#3a291d 0%,#251a12 48%,#150d08 100%)}
+  body::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.075;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>")}
+  .vignette{position:absolute;inset:0;background:radial-gradient(120% 100% at 46% 38%,transparent 42%,rgba(0,0,0,.62) 100%)}
+  .lamp{position:absolute;left:-6%;top:-14%;width:62%;height:78%;pointer-events:none;
+    background:radial-gradient(closest-side,rgba(255,214,150,.16),transparent 72%)}
+
+  header{position:absolute;left:0;top:0;width:100%;height:62px;display:flex;align-items:center;
+    padding:0 26px;gap:22px;z-index:5;
+    background:linear-gradient(180deg,#cba65c,#a78340 55%,#7d5f27);
+    border-bottom:1px solid rgba(0,0,0,.5);
+    box-shadow:0 10px 24px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,240,200,.55)}
+  header::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.45;
+    background:repeating-linear-gradient(90deg,rgba(255,255,255,.09) 0 1px,transparent 1px 4px)}
+  .brand{font-family:Georgia,"Times New Roman",serif;font-size:19px;letter-spacing:.42em;
+    color:#2a1d0c;text-shadow:0 1px 0 rgba(255,240,200,.55);font-weight:700}
+  .brand small{display:block;font-family:"Segoe UI",sans-serif;font-size:8.5px;letter-spacing:.5em;opacity:.55;margin-top:1px}
+  nav{display:flex;gap:10px;margin-left:auto}
+  nav a{font-size:12.5px;color:#241708;text-decoration:none;padding:7px 14px;border-radius:3px;
+    background:linear-gradient(180deg,rgba(255,246,214,.5),rgba(255,246,214,.06));
+    border:1px solid rgba(60,40,10,.35);box-shadow:inset 0 1px 0 rgba(255,250,225,.6)}
+  nav a.on{background:linear-gradient(180deg,#3a2a12,#231708);color:#e6c483;border-color:#1a1008}
+
+  .shelf{position:absolute;left:44px;right:44px;bottom:182px;height:420px;z-index:2}
+  .books{position:absolute;left:0;right:0;bottom:0;height:100%;display:flex;align-items:flex-end;gap:9px;padding-left:8px;z-index:2}
+  .book{position:relative;flex:none;border-radius:4px 4px 2px 2px;
+    display:flex;flex-direction:column;align-items:center;padding:15px 0 30px;
+    box-shadow:7px 10px 20px rgba(0,0,0,.62), inset -4px 0 7px rgba(0,0,0,.5),
+      inset 4px 0 6px rgba(255,255,255,.16)}
+  .book::after{content:"";position:absolute;left:-2px;right:-6px;bottom:-11px;height:22px;z-index:-1;
+    background:radial-gradient(58% 100% at 50% 0%,rgba(0,0,0,.72),transparent 74%);filter:blur(2px)}
+  .blk{position:absolute;right:-5px;top:5px;bottom:5px;width:6px;border-radius:0 2px 2px 0;opacity:.85;
+    background:repeating-linear-gradient(180deg,#efe6d0 0 1.6px,#c9b894 1.6px 2.7px);
+    box-shadow:2px 0 7px rgba(0,0,0,.5)}
+  .bands{position:absolute;left:0;right:0;height:7px;background:linear-gradient(180deg,#d9b269,#8c6a2c);opacity:.9}
+  .bands.t{top:17px}.bands.b{bottom:36px}
+  .title{writing-mode:vertical-rl;font-family:Georgia,"宋体",serif;font-size:15px;font-weight:600;
+    letter-spacing:.12em;color:#ffe7b6;max-height:60%;overflow:hidden;white-space:nowrap;
+    padding:12px 5px;margin-top:24px;border-radius:3px;
+    background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,.10) 55%,rgba(0,0,0,.24));
+    text-shadow:0 1px 2px rgba(0,0,0,.9),0 0 1px rgba(0,0,0,.8)}
+  .meta{position:absolute;bottom:12px;font-size:8.5px;letter-spacing:.08em;color:rgba(255,231,182,.7);
+    writing-mode:vertical-rl;height:70px}
+  .navy{background:linear-gradient(90deg,#1b2846,#3a5a8c 22%,#2e4a7a 55%,#141d33)}
+  .oxblood{background:linear-gradient(90deg,#3d1417,#8a2f31 22%,#712527 55%,#2f0f12)}
+  .forest{background:linear-gradient(90deg,#16291f,#35634b 22%,#2a5540 55%,#10201a)}
+  .ochre{background:linear-gradient(90deg,#4a2f10,#9c7026 22%,#855f20 55%,#3a250c)}
+  .slate{background:linear-gradient(90deg,#1e242c,#46525f 22%,#3a4652 55%,#161b21)}
+  .book.sel{height:400px;box-shadow:16px 20px 38px rgba(0,0,0,.75),0 0 0 1px rgba(255,222,160,.3),
+    inset -5px 0 9px rgba(0,0,0,.5), inset 5px 0 7px rgba(255,255,255,.22)}
+  .book.sel .title{color:#fff0c8}
+  .tab{position:absolute;right:-14px;top:84px;width:14px;height:52px;border-radius:0 3px 3px 0;
+    background:linear-gradient(90deg,#b8642c,#e08a3f);box-shadow:3px 4px 9px rgba(0,0,0,.55)}
+
+  .plank{position:absolute;left:0;right:0;bottom:0;height:32px;border-radius:3px;z-index:1;
+    background:linear-gradient(180deg,#75522e,#4d331b 42%,#25170b);
+    box-shadow:0 -2px 6px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,220,170,.4), 0 26px 46px rgba(0,0,0,.65)}
+  .plank::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;
+    background:linear-gradient(180deg,rgba(0,0,0,.4),transparent)}
+  .plank::after{content:"";position:absolute;left:0;right:0;bottom:-30px;height:30px;
+    background:linear-gradient(180deg,rgba(0,0,0,.6),transparent)}
+
+  .plaque{position:absolute;left:56px;bottom:96px;display:flex;align-items:center;gap:13px;z-index:3;
+    padding:10px 18px;border-radius:2px;font-size:12px;letter-spacing:.13em;color:rgba(244,232,210,.8);
+    background:linear-gradient(180deg,rgba(255,240,205,.1),rgba(0,0,0,.28));
+    border:1px solid rgba(220,190,140,.24)}
+  .plaque b{color:#f5dcaa}
+
+  .note{position:absolute;right:50px;top:100px;width:216px;padding:20px 18px 18px;z-index:4;
+    background:linear-gradient(160deg,#f9f1de,#e9ddc1);color:#2b2419;transform:rotate(-2.2deg);
+    border-radius:2px;box-shadow:10px 14px 30px rgba(0,0,0,.62), inset 0 0 0 1px rgba(120,100,70,.18)}
+  .note::before{content:"";position:absolute;left:50%;top:-11px;transform:translateX(-50%);
+    width:66px;height:22px;background:linear-gradient(180deg,rgba(255,255,255,.6),rgba(255,255,255,.16));
+    border:1px solid rgba(150,130,100,.35)}
+  .note .d{font-family:Georgia,serif;font-size:30px}
+  .note .w{font-size:10.5px;letter-spacing:.28em;opacity:.6;margin-top:2px}
+  .note hr{border:0;border-top:1px dashed rgba(90,70,45,.35);margin:13px 0}
+  .note p{font-size:11.5px;line-height:1.85;color:#453927}
+  .note .acct{font-size:11.5px;display:flex;justify-content:space-between;color:#332a1c}
+</style></head><body>
+<div class="vignette"></div><div class="lamp"></div>
+<header>
+  <div class="brand">ENDPAPER<small>LAUNCHER</small></div>
+  <nav><a class="on">书架</a><a>下载</a><a>实例</a><a>设置</a></nav>
+</header>
+
+<div class="shelf">
+  <div class="books">
+    <div class="book navy" style="width:112px;height:340px">
+      <i class="blk"></i><span class="bands t"></span><span class="bands b"></span>
+      <span class="title">XPlus PerioTable</span><span class="meta">26.3 · 88 模组</span>
+    </div>
+    <div class="book oxblood" style="width:96px;height:306px">
+      <i class="blk"></i><span class="bands t"></span><span class="bands b"></span>
+      <span class="title">生电服</span><span class="meta">26.3 · 原版</span>
+    </div>
+    <div class="book sel forest" style="width:132px">
+      <i class="blk"></i><span class="bands t"></span><span class="bands b"></span><span class="tab"></span>
+      <span class="title">Axolotl 88 Mod</span><span class="meta">1.21.1 · 正在玩</span>
+    </div>
+    <div class="book ochre" style="width:104px;height:322px">
+      <i class="blk"></i><span class="bands t"></span><span class="bands b"></span>
+      <span class="title">书籍制作工具</span><span class="meta">测试实例</span>
+    </div>
+    <div class="book slate" style="width:92px;height:292px">
+      <i class="blk"></i><span class="bands t"></span><span class="bands b"></span>
+      <span class="title">Fabric 26.3</span><span class="meta">原版手感</span>
+    </div>
+    <div class="book navy" style="width:86px;height:278px">
+      <i class="blk"></i><span class="bands t"></span><span class="bands b"></span>
+      <span class="title">备份档</span><span class="meta">10.28</span>
+    </div>
+  </div>
+  <div class="plank"></div>
+</div>
+
+<div class="plaque"><b>6 个实例</b><span>·</span><span>1 个正在玩</span><span>·</span><span>点书脊抽出来</span></div>
+
+<div class="note">
+  <div class="d">11 月 1 日</div>
+  <div class="w">星期日</div>
+  <hr>
+  <p>今日没有游玩记录。<br>上次启动 10 月 28 日，47 分钟。</p>
+  <hr>
+  <div class="acct"><span>LOU0122</span><span style="opacity:.55">已登录</span></div>
+</div>
+</body></html>

@@ -1702,7 +1702,7 @@ fn export_litematic(session: &PreviewSession) -> Result<Vec<u8>, String> {
             .manifest
             .author
             .as_deref()
-            .unwrap_or("Axolotl Launcher"),
+            .unwrap_or("Endpaper"),
     );
     metadata.insert(
         "Description",

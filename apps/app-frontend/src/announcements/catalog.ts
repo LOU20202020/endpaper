@@ -34,8 +34,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.11.0-beta.1',
         publishedAt: '2026-11-01',
         title: {
-            'en-US': 'Axolotl Launcher 1.11.0-beta.1',
-            'zh-CN': 'Axolotl Launcher 1.11.0-beta.1',
+            'en-US': 'Endpaper 1.11.0-beta.1',
+            'zh-CN': 'Endpaper 1.11.0-beta.1',
         },
         changes: {
             changed: [
@@ -103,8 +103,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.5',
         publishedAt: '2026-10-31',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.5',
-            'zh-CN': 'Axolotl Launcher 1.10.5',
+            'en-US': 'Endpaper 1.10.5',
+            'zh-CN': 'Endpaper 1.10.5',
         },
         changes: {
             fixed: [
@@ -126,8 +126,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.4',
         publishedAt: '2026-10-30',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.4',
-            'zh-CN': 'Axolotl Launcher 1.10.4',
+            'en-US': 'Endpaper 1.10.4',
+            'zh-CN': 'Endpaper 1.10.4',
         },
         changes: {
             changed: [
@@ -241,8 +241,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.3',
         publishedAt: '2026-10-28',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.3',
-            'zh-CN': 'Axolotl Launcher 1.10.3',
+            'en-US': 'Endpaper 1.10.3',
+            'zh-CN': 'Endpaper 1.10.3',
         },
         changes: {
             added: [
@@ -416,8 +416,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.2',
         publishedAt: '2026-10-27',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.2',
-            'zh-CN': 'Axolotl Launcher 1.10.2',
+            'en-US': 'Endpaper 1.10.2',
+            'zh-CN': 'Endpaper 1.10.2',
         },
         changes: {
             added: [
@@ -568,8 +568,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.1',
         publishedAt: '2026-10-25',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.1',
-            'zh-CN': 'Axolotl Launcher 1.10.1',
+            'en-US': 'Endpaper 1.10.1',
+            'zh-CN': 'Endpaper 1.10.1',
         },
         changes: {
             added: [
@@ -740,8 +740,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.1-beta.1',
         publishedAt: '2026-10-24',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.1-beta.1',
-            'zh-CN': 'Axolotl Launcher 1.10.1-beta.1',
+            'en-US': 'Endpaper 1.10.1-beta.1',
+            'zh-CN': 'Endpaper 1.10.1-beta.1',
         },
         changes: {
             changed: [
@@ -803,8 +803,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.10.0',
         publishedAt: '2026-10-23',
         title: {
-            'en-US': 'Axolotl Launcher 1.10.0',
-            'zh-CN': 'Axolotl Launcher 1.10.0',
+            'en-US': 'Endpaper 1.10.0',
+            'zh-CN': 'Endpaper 1.10.0',
         },
         changes: {
             added: [
@@ -1209,8 +1209,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.8',
         publishedAt: '2026-10-13',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.8',
-            'zh-CN': 'Axolotl Launcher 1.9.8',
+            'en-US': 'Endpaper 1.9.8',
+            'zh-CN': 'Endpaper 1.9.8',
         },
         changes: {
             added: [
@@ -1498,8 +1498,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7',
         publishedAt: '2026-09-30',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7',
-            'zh-CN': 'Axolotl Launcher 1.9.7',
+            'en-US': 'Endpaper 1.9.7',
+            'zh-CN': 'Endpaper 1.9.7',
         },
         changes: {
             added: [
@@ -1817,8 +1817,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.6',
         publishedAt: '2026-09-27',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.6',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.6',
+            'en-US': 'Endpaper 1.9.7-beta.6',
+            'zh-CN': 'Endpaper 1.9.7-beta.6',
         },
         changes: {
             added: [
@@ -1944,8 +1944,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.5',
         publishedAt: '2026-09-25',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.5',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.5',
+            'en-US': 'Endpaper 1.9.7-beta.5',
+            'zh-CN': 'Endpaper 1.9.7-beta.5',
         },
         changes: {
             added: [
@@ -2031,8 +2031,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.4',
         publishedAt: '2026-09-22',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.4',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.4',
+            'en-US': 'Endpaper 1.9.7-beta.4',
+            'zh-CN': 'Endpaper 1.9.7-beta.4',
         },
         changes: {
             added: [
@@ -2130,8 +2130,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.4',
         publishedAt: '2026-09-20',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.4',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.4',
+            'en-US': 'Endpaper 1.9.7-beta.4',
+            'zh-CN': 'Endpaper 1.9.7-beta.4',
         },
         changes: {
             added: [
@@ -2183,8 +2183,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.3',
         publishedAt: '2026-09-20',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.3',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.3',
+            'en-US': 'Endpaper 1.9.7-beta.3',
+            'zh-CN': 'Endpaper 1.9.7-beta.3',
         },
         changes: {
             added: [
@@ -2270,8 +2270,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.2',
         publishedAt: '2026-09-19',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.2',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.2',
+            'en-US': 'Endpaper 1.9.7-beta.2',
+            'zh-CN': 'Endpaper 1.9.7-beta.2',
         },
         changes: {
             added: [
@@ -2324,9 +2324,9 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
                 },
                 {
                     'en-US':
-                        'Added Nix Flake, NixOS, and Home Manager support for building and installing Axolotl Launcher.',
+                        'Added Nix Flake, NixOS, and Home Manager support for building and installing Endpaper.',
                     'zh-CN':
-                        '新增 Nix Flake、NixOS 和 Home Manager 支持，可用于构建和安装 Axolotl Launcher。',
+                        '新增 Nix Flake、NixOS 和 Home Manager 支持，可用于构建和安装 Endpaper。',
                 },
             ],
             changed: [
@@ -2407,8 +2407,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.7-beta.1',
         publishedAt: '2026-09-15',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.7-beta.1',
-            'zh-CN': 'Axolotl Launcher 1.9.7-beta.1',
+            'en-US': 'Endpaper 1.9.7-beta.1',
+            'zh-CN': 'Endpaper 1.9.7-beta.1',
         },
         changes: {
             added: [
@@ -2443,8 +2443,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.6',
         publishedAt: '2026-09-15',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.6',
-            'zh-CN': 'Axolotl Launcher 1.9.6',
+            'en-US': 'Endpaper 1.9.6',
+            'zh-CN': 'Endpaper 1.9.6',
         },
         changes: {
             added: [
@@ -2870,8 +2870,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.5',
         publishedAt: '2026-09-04',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.5',
-            'zh-CN': 'Axolotl Launcher 1.9.5',
+            'en-US': 'Endpaper 1.9.5',
+            'zh-CN': 'Endpaper 1.9.5',
         },
         changes: {
             added: [
@@ -3091,8 +3091,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.4',
         publishedAt: '2026-08-29',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.4',
-            'zh-CN': 'Axolotl Launcher 1.9.4',
+            'en-US': 'Endpaper 1.9.4',
+            'zh-CN': 'Endpaper 1.9.4',
         },
         changes: {
             fixed: [
@@ -3108,8 +3108,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.2',
         publishedAt: '2026-08-29',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.2',
-            'zh-CN': 'Axolotl Launcher 1.9.2',
+            'en-US': 'Endpaper 1.9.2',
+            'zh-CN': 'Endpaper 1.9.2',
         },
         changes: {
             fixed: [
@@ -3150,8 +3150,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.1',
         publishedAt: '2026-08-27',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.1',
-            'zh-CN': 'Axolotl Launcher 1.9.1',
+            'en-US': 'Endpaper 1.9.1',
+            'zh-CN': 'Endpaper 1.9.1',
         },
         changes: {
             added: [
@@ -3213,8 +3213,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.9.0',
         publishedAt: '2026-08-26',
         title: {
-            'en-US': 'Axolotl Launcher 1.9.0',
-            'zh-CN': 'Axolotl Launcher 1.9.0',
+            'en-US': 'Endpaper 1.9.0',
+            'zh-CN': 'Endpaper 1.9.0',
         },
         changes: {
             added: [
@@ -3340,8 +3340,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.14',
         publishedAt: '2026-08-25',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.14',
-            'zh-CN': 'Axolotl Launcher 1.8.14',
+            'en-US': 'Endpaper 1.8.14',
+            'zh-CN': 'Endpaper 1.8.14',
         },
         changes: {
             added: [
@@ -3409,8 +3409,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.12',
         publishedAt: '2026-08-23',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.12',
-            'zh-CN': 'Axolotl Launcher 1.8.12',
+            'en-US': 'Endpaper 1.8.12',
+            'zh-CN': 'Endpaper 1.8.12',
         },
         changes: {
             fixed: [
@@ -3426,8 +3426,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.11',
         publishedAt: '2026-08-22',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.11',
-            'zh-CN': 'Axolotl Launcher 1.8.11',
+            'en-US': 'Endpaper 1.8.11',
+            'zh-CN': 'Endpaper 1.8.11',
         },
         changes: {
             added: [
@@ -3512,8 +3512,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.10',
         publishedAt: '2026-08-22',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.10',
-            'zh-CN': 'Axolotl Launcher 1.8.10',
+            'en-US': 'Endpaper 1.8.10',
+            'zh-CN': 'Endpaper 1.8.10',
         },
         changes: {
             added: [
@@ -3543,8 +3543,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.9',
         publishedAt: '2026-08-21',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.9',
-            'zh-CN': 'Axolotl Launcher 1.8.9',
+            'en-US': 'Endpaper 1.8.9',
+            'zh-CN': 'Endpaper 1.8.9',
         },
         changes: {
             added: [
@@ -3584,8 +3584,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.8',
         publishedAt: '2026-08-19',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.8',
-            'zh-CN': 'Axolotl Launcher 1.8.8',
+            'en-US': 'Endpaper 1.8.8',
+            'zh-CN': 'Endpaper 1.8.8',
         },
         changes: {
             added: [
@@ -3639,8 +3639,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.7',
         publishedAt: '2026-08-19',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.7',
-            'zh-CN': 'Axolotl Launcher 1.8.7',
+            'en-US': 'Endpaper 1.8.7',
+            'zh-CN': 'Endpaper 1.8.7',
         },
         changes: {
             changed: [
@@ -3736,8 +3736,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.6',
         publishedAt: '2026-08-18',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.6',
-            'zh-CN': 'Axolotl Launcher 1.8.6',
+            'en-US': 'Endpaper 1.8.6',
+            'zh-CN': 'Endpaper 1.8.6',
         },
         changes: {
             added: [
@@ -3786,8 +3786,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.5',
         publishedAt: '2026-08-18',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.5',
-            'zh-CN': 'Axolotl Launcher 1.8.5',
+            'en-US': 'Endpaper 1.8.5',
+            'zh-CN': 'Endpaper 1.8.5',
         },
         changes: {
             fixed: [
@@ -3804,8 +3804,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.4',
         publishedAt: '2026-08-18',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.4',
-            'zh-CN': 'Axolotl Launcher 1.8.4',
+            'en-US': 'Endpaper 1.8.4',
+            'zh-CN': 'Endpaper 1.8.4',
         },
         changes: {
             fixed: [
@@ -3829,8 +3829,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.3',
         publishedAt: '2026-08-17',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.3',
-            'zh-CN': 'Axolotl Launcher 1.8.3',
+            'en-US': 'Endpaper 1.8.3',
+            'zh-CN': 'Endpaper 1.8.3',
         },
         changes: {
             added: [
@@ -3964,8 +3964,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.2',
         publishedAt: '2026-08-16',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.2',
-            'zh-CN': 'Axolotl Launcher 1.8.2',
+            'en-US': 'Endpaper 1.8.2',
+            'zh-CN': 'Endpaper 1.8.2',
         },
         changes: {
             fixed: [
@@ -3991,8 +3991,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.1',
         publishedAt: '2026-08-16',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.1',
-            'zh-CN': 'Axolotl Launcher 1.8.1',
+            'en-US': 'Endpaper 1.8.1',
+            'zh-CN': 'Endpaper 1.8.1',
         },
         changes: {
             added: [
@@ -4105,8 +4105,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.8.0',
         publishedAt: '2026-08-15',
         title: {
-            'en-US': 'Axolotl Launcher 1.8.0',
-            'zh-CN': 'Axolotl Launcher 1.8.0',
+            'en-US': 'Endpaper 1.8.0',
+            'zh-CN': 'Endpaper 1.8.0',
         },
         changes: {
             added: [
@@ -4235,8 +4235,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.7',
         publishedAt: '2026-08-14',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.7',
-            'zh-CN': 'Axolotl Launcher 1.7.7',
+            'en-US': 'Endpaper 1.7.7',
+            'zh-CN': 'Endpaper 1.7.7',
         },
         changes: {
             added: [
@@ -4252,8 +4252,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.6',
         publishedAt: '2026-08-14',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.6',
-            'zh-CN': 'Axolotl Launcher 1.7.6',
+            'en-US': 'Endpaper 1.7.6',
+            'zh-CN': 'Endpaper 1.7.6',
         },
         changes: {
             added: [
@@ -4271,8 +4271,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.5',
         publishedAt: '2026-08-13',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.5',
-            'zh-CN': 'Axolotl Launcher 1.7.5',
+            'en-US': 'Endpaper 1.7.5',
+            'zh-CN': 'Endpaper 1.7.5',
         },
         changes: {
             fixed: [
@@ -4310,8 +4310,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.4',
         publishedAt: '2026-08-12',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.4',
-            'zh-CN': 'Axolotl Launcher 1.7.4',
+            'en-US': 'Endpaper 1.7.4',
+            'zh-CN': 'Endpaper 1.7.4',
         },
         changes: {
             changed: [
@@ -4381,7 +4381,7 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
             fixed: [
                 {
                     'en-US':
-                        'Fixed corrupted launcher databases repeatedly showing errors when opening instance content; Axolotl now restores the latest verified backup while preserving the damaged database files.',
+                        'Fixed corrupted launcher databases repeatedly showing errors when opening instance content; Endpaper now restores the latest verified backup while preserving the damaged database files.',
                     'zh-CN':
                         '修复启动器数据库损坏后，打开实例内容页会反复报错的问题；现在会从最新且校验正常的备份恢复，并保留损坏的数据库文件。',
                 },
@@ -4497,8 +4497,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.3',
         publishedAt: '2026-08-10',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.3',
-            'zh-CN': 'Axolotl Launcher 1.7.3',
+            'en-US': 'Endpaper 1.7.3',
+            'zh-CN': 'Endpaper 1.7.3',
         },
         changes: {
             added: [
@@ -4555,8 +4555,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.2',
         publishedAt: '2026-08-10',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.2',
-            'zh-CN': 'Axolotl Launcher 1.7.2',
+            'en-US': 'Endpaper 1.7.2',
+            'zh-CN': 'Endpaper 1.7.2',
         },
         changes: {
             added: [
@@ -4642,8 +4642,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.1',
         publishedAt: '2026-08-08',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.1',
-            'zh-CN': 'Axolotl Launcher 1.7.1',
+            'en-US': 'Endpaper 1.7.1',
+            'zh-CN': 'Endpaper 1.7.1',
         },
         changes: {
             added: [
@@ -4706,8 +4706,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.7.0',
         publishedAt: '2026-08-06',
         title: {
-            'en-US': 'Axolotl Launcher 1.7.0',
-            'zh-CN': 'Axolotl Launcher 1.7.0',
+            'en-US': 'Endpaper 1.7.0',
+            'zh-CN': 'Endpaper 1.7.0',
         },
         changes: {
             added: [
@@ -4759,8 +4759,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.12',
         publishedAt: '2026-08-04',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.12',
-            'zh-CN': 'Axolotl Launcher 1.6.12',
+            'en-US': 'Endpaper 1.6.12',
+            'zh-CN': 'Endpaper 1.6.12',
         },
         changes: {
             added: [
@@ -4817,8 +4817,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.11',
         publishedAt: '2026-08-04',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.11',
-            'zh-CN': 'Axolotl Launcher 1.6.11',
+            'en-US': 'Endpaper 1.6.11',
+            'zh-CN': 'Endpaper 1.6.11',
         },
         changes: {
             added: [
@@ -4873,8 +4873,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.10',
         publishedAt: '2026-08-03',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.10',
-            'zh-CN': 'Axolotl Launcher 1.6.10',
+            'en-US': 'Endpaper 1.6.10',
+            'zh-CN': 'Endpaper 1.6.10',
         },
         changes: {
             added: [
@@ -4956,15 +4956,15 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.9',
         publishedAt: '2026-08-02',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.9',
-            'zh-CN': 'Axolotl Launcher 1.6.9',
+            'en-US': 'Endpaper 1.6.9',
+            'zh-CN': 'Endpaper 1.6.9',
         },
         changes: {
             added: [
                 {
                     'en-US':
-                        'Launcher will now show a discord rich presence binded to Axolotl Launcher.',
-                    'zh-CN': '启动器现在会显示 Axolotl Launcher 的 Discord Rich Presence。',
+                        'Launcher will now show a discord rich presence binded to Endpaper.',
+                    'zh-CN': '启动器现在会显示 Endpaper 的 Discord Rich Presence。',
                 },
                 {
                     'en-US':
@@ -5003,8 +5003,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.8',
         publishedAt: '2026-08-02',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.8',
-            'zh-CN': 'Axolotl Launcher 1.6.8',
+            'en-US': 'Endpaper 1.6.8',
+            'zh-CN': 'Endpaper 1.6.8',
         },
         changes: {
             added: [
@@ -5139,8 +5139,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.7',
         publishedAt: '2026-08-01',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.7',
-            'zh-CN': 'Axolotl Launcher 1.6.7',
+            'en-US': 'Endpaper 1.6.7',
+            'zh-CN': 'Endpaper 1.6.7',
         },
         changes: {
             fixed: [
@@ -5157,8 +5157,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.6',
         publishedAt: '2026-08-01',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.6',
-            'zh-CN': 'Axolotl Launcher 1.6.6',
+            'en-US': 'Endpaper 1.6.6',
+            'zh-CN': 'Endpaper 1.6.6',
         },
         changes: {
             added: [
@@ -5219,8 +5219,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.5',
         publishedAt: '2026-07-31',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.5',
-            'zh-CN': 'Axolotl Launcher 1.6.5',
+            'en-US': 'Endpaper 1.6.5',
+            'zh-CN': 'Endpaper 1.6.5',
         },
         changes: {
             fixed: [
@@ -5244,8 +5244,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.4',
         publishedAt: '2026-07-31',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.4',
-            'zh-CN': 'Axolotl Launcher 1.6.4',
+            'en-US': 'Endpaper 1.6.4',
+            'zh-CN': 'Endpaper 1.6.4',
         },
         changes: {
             changed: [
@@ -5288,8 +5288,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.1',
         publishedAt: '2026-07-29',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.1',
-            'zh-CN': 'Axolotl Launcher 1.6.1',
+            'en-US': 'Endpaper 1.6.1',
+            'zh-CN': 'Endpaper 1.6.1',
         },
         changes: {
             changed: [
@@ -5327,8 +5327,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.6.0',
         publishedAt: '2026-07-28',
         title: {
-            'en-US': 'Axolotl Launcher 1.6.0',
-            'zh-CN': 'Axolotl Launcher 1.6.0',
+            'en-US': 'Endpaper 1.6.0',
+            'zh-CN': 'Endpaper 1.6.0',
         },
         changes: {
             added: [
@@ -5367,9 +5367,9 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
                 },
                 {
                     'en-US':
-                        'Replaced Tauri template variables in the Linux desktop file template with fixed values, ensuring the built .desktop file uses "Axolotl Launcher" directly for its name, icon, and executable.',
+                        'Replaced Tauri template variables in the Linux desktop file template with fixed values, ensuring the built .desktop file uses "Endpaper" directly for its name, icon, and executable.',
                     'zh-CN':
-                        '将 Linux 桌面文件模板从 Tauri 模板变量格式改为固定值格式, 确保编译后的 .desktop 文件直接使用 "Axolotl Launcher" 作为名称、图标和可执行文件。',
+                        '将 Linux 桌面文件模板从 Tauri 模板变量格式改为固定值格式, 确保编译后的 .desktop 文件直接使用 "Endpaper" 作为名称、图标和可执行文件。',
                 },
             ],
             fixed: [
@@ -5389,8 +5389,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.5.5',
         publishedAt: '2026-07-26',
         title: {
-            'en-US': 'Axolotl Launcher 1.5.5',
-            'zh-CN': 'Axolotl Launcher 1.5.5',
+            'en-US': 'Endpaper 1.5.5',
+            'zh-CN': 'Endpaper 1.5.5',
         },
         changes: {
             added: [
@@ -5487,8 +5487,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.5.4',
         publishedAt: '2026-07-25',
         title: {
-            'en-US': 'Axolotl Launcher 1.5.4',
-            'zh-CN': 'Axolotl Launcher 1.5.4',
+            'en-US': 'Endpaper 1.5.4',
+            'zh-CN': 'Endpaper 1.5.4',
         },
         changes: {
             added: [
@@ -5525,8 +5525,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.5.3',
         publishedAt: '2026-07-25',
         title: {
-            'en-US': 'Axolotl Launcher 1.5.3',
-            'zh-CN': 'Axolotl Launcher 1.5.3',
+            'en-US': 'Endpaper 1.5.3',
+            'zh-CN': 'Endpaper 1.5.3',
         },
         changes: {
             added: [
@@ -5577,8 +5577,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.5.2',
         publishedAt: '2026-07-25',
         title: {
-            'en-US': 'Axolotl Launcher 1.5.2',
-            'zh-CN': 'Axolotl Launcher 1.5.2',
+            'en-US': 'Endpaper 1.5.2',
+            'zh-CN': 'Endpaper 1.5.2',
         },
         changes: {
             added: [
@@ -5765,8 +5765,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.5.1',
         publishedAt: '2026-07-23',
         title: {
-            'en-US': 'Axolotl Launcher 1.5.1',
-            'zh-CN': 'Axolotl Launcher 1.5.1',
+            'en-US': 'Endpaper 1.5.1',
+            'zh-CN': 'Endpaper 1.5.1',
         },
         changes: {
             added: [
@@ -5822,8 +5822,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.5.0',
         publishedAt: '2026-07-23',
         title: {
-            'en-US': 'Axolotl Launcher 1.5.0',
-            'zh-CN': 'Axolotl Launcher 1.5.0',
+            'en-US': 'Endpaper 1.5.0',
+            'zh-CN': 'Endpaper 1.5.0',
         },
         changes: {
             added: [
@@ -5900,8 +5900,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.4.1',
         publishedAt: '2026-07-23',
         title: {
-            'en-US': 'Axolotl Launcher 1.4.1',
-            'zh-CN': 'Axolotl Launcher 1.4.1',
+            'en-US': 'Endpaper 1.4.1',
+            'zh-CN': 'Endpaper 1.4.1',
         },
         changes: {
             added: [
@@ -5972,8 +5972,8 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         version: '1.4.0',
         publishedAt: '2026-07-23',
         title: {
-            'en-US': 'Axolotl Launcher 1.4.0',
-            'zh-CN': 'Axolotl Launcher 1.4.0',
+            'en-US': 'Endpaper 1.4.0',
+            'zh-CN': 'Endpaper 1.4.0',
         },
         changes: {
             added: [

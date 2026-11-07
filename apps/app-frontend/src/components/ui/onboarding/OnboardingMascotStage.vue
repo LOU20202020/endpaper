@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import searchingVisual from '@/assets/axo-searching.svg?url'
-import teachingVisual from '@/assets/axo-teaching.svg?url'
+import mascotVisual from '@/assets/endpaper-book.svg?url'
 
 defineProps<{
     alt: string
 }>()
 
-const mascotVisuals = [teachingVisual, searchingVisual]
-const mascotVisual = mascotVisuals[Math.floor(Math.random() * mascotVisuals.length)]
 </script>
 
 <template>

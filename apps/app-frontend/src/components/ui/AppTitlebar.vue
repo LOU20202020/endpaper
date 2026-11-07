@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router'
 
 import McpConnectionStatus from '@/features/mcp/McpConnectionStatus.vue'
 
-import AxolotlLogo from './AxolotlLogo.vue'
+import EndpaperLogo from './EndpaperLogo.vue'
 import Breadcrumbs from './Breadcrumbs.vue'
 
 defineProps<{
@@ -23,7 +23,7 @@ const messages = defineMessages({
 <template>
     <div data-tauri-drag-region class="flex min-w-0 items-center">
         <div data-tauri-drag-region class="flex h-full shrink-0 items-center gap-2 p-3">
-            <AxolotlLogo class="h-full w-auto shrink-0 pointer-events-none" />
+            <EndpaperLogo class="h-full w-auto shrink-0 pointer-events-none" />
             <span
                 v-if="isBetaBuild"
                 class="inline-flex shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-xs font-semibold leading-none text-blue-700"

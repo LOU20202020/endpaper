@@ -93,13 +93,13 @@ import ModpackAlreadyInstalledModal from '@/components/ui/modal/ModpackAlreadyIn
 import ModpackInstallModal from '@/components/ui/modal/ModpackInstallModal.vue'
 import PrivacyConsentModal from '@/components/ui/modal/PrivacyConsentModal.vue'
 import NavButton from '@/components/ui/NavButton.vue'
+import SplashScreen from '@/components/ui/SplashScreen.vue'
 import NavRail from '@/components/ui/NavRail.vue'
 import OfflineAccountRestrictionModal from '@/components/ui/OfflineAccountRestrictionModal.vue'
 import OnboardingOverlay from '@/components/ui/onboarding/OnboardingOverlay.vue'
 import QuickInstanceSwitcher from '@/components/ui/QuickInstanceSwitcher.vue'
 import RemoteAnnouncements from '@/components/ui/RemoteAnnouncements.vue'
 import ResourceOperationPreviewModal from '@/components/ui/ResourceOperationPreviewModal.vue'
-import SplashScreen from '@/components/ui/SplashScreen.vue'
 import WindowControls from '@/components/ui/WindowControls.vue'
 import { useCheckDisableMouseover } from '@/composables/macCssFix.js'
 import { isOfflineAccountRestrictedError } from '@/composables/useAntiPiracyStatus'
@@ -402,7 +402,9 @@ const windowAppearance = createWindowAppearanceController(
     },
     (state) =>
         invoke<WindowFrameResult>('set_transparent_window_frame', {
-            enabled: state.transparent,
+            // 窗口本身永远是 transparent（tauri.conf 里写死），所以 DWM 的
+            // 1px 描边/圆角/阴影必须一直关掉，否则透明窗口四周会有一圈发丝线
+            enabled: true,
         }),
     (enabled) => {
         cssWindowBorder.value = enabled
@@ -2332,7 +2334,10 @@ async function logOut() {
 }
 
 onMounted(() => {
-    invoke('show_window')
+    // 窗口显示后通知启动画面：从这一刻开始计时
+    invoke('show_window').finally(() => {
+        window.dispatchEvent(new CustomEvent('endpaper:window-shown'))
+    })
 
     error.setErrorModal(errorModal.value)
     error.setAntiPiracyNoticeModal(antiPiracyNoticeModal.value)
@@ -2893,10 +2898,14 @@ function handleAuxClick(e) {
 }
 
 provideAppUpdateDownloadProgress(appUpdateDownload)
+
+// 开屏动画（整窗翻书 → 就地变形为主界面）暂时关闭。
+// 代码完整保留在 components/ui/SplashScreen.vue，改 true 即可恢复。
+const SHOW_SPLASH = false
 </script>
 
 <template>
-    <SplashScreen v-if="!stateFailed" ref="splashScreen" data-tauri-drag-region />
+    <SplashScreen v-if="SHOW_SPLASH && !stateFailed" data-tauri-drag-region />
     <!--
         A failed initialization never renders the app shell, so this framed window
         ends up with no title bar and no controls at all. This strip keeps the

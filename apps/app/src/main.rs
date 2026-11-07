@@ -723,7 +723,7 @@ fn main() {
         &tauri_context.config().identifier,
     );
 
-    tracing::info!("Initialized tracing subscriber. Loading Axolotl Launcher!");
+    tracing::info!("Initialized tracing subscriber. Loading Endpaper!");
 
     let mut builder = tauri::Builder::default().register_uri_scheme_protocol(
         "axolotl-skin",
@@ -810,6 +810,103 @@ fn main() {
             #[cfg(target_os = "macos")]
             if let Some(window) = app.get_webview_window("main") {
                 macos::traffic_lights::install(&window)?;
+            }
+
+            // tauri.conf.json 里写了 decorations: false，但主窗口实际创建出来仍带
+            // WS_CAPTION（实测 style=0x14CF0000），DWM 因此给透明窗口画一圈 1px
+            // 发丝边框——就是启动画面四周那圈"框"。这里在启动后 4 秒内反复把
+            // 标题栏样式抹掉（tao 的 set_decorations 是往事件线程投递的，只调一次
+            // 不可靠），并把 DWM 的描边色、圆角一并关掉。
+            #[cfg(windows)]
+            {
+                use windows::Win32::Foundation::HWND;
+                use windows::Win32::Graphics::Dwm::{
+                    DWMWA_BORDER_COLOR, DWMWA_WINDOW_CORNER_PREFERENCE,
+                    DwmSetWindowAttribute,
+                };
+                use windows::Win32::UI::WindowsAndMessaging::{
+                    GWL_STYLE, GetWindowLongW, SWP_FRAMECHANGED, SWP_NOMOVE,
+                    SWP_NOSIZE, SWP_NOZORDER, SetWindowLongW, SetWindowPos,
+                    WS_CAPTION,
+                };
+
+                let handle = app.handle().clone();
+                tauri::async_runtime::spawn(async move {
+                    let log_path =
+                        std::env::temp_dir().join("endpaper-frame.log");
+                    for i in 0..80u32 {
+                        if let Some(window) = handle.get_webview_window("main")
+                        {
+                            let _ = window.set_decorations(false);
+                            if let Ok(h) = window.hwnd() {
+                                let hwnd = HWND(h.0);
+                                unsafe {
+                                    let style =
+                                        GetWindowLongW(hwnd, GWL_STYLE) as u32;
+                                    let want = style & !WS_CAPTION.0;
+                                    if want != style {
+                                        SetWindowLongW(
+                                            hwnd,
+                                            GWL_STYLE,
+                                            want as i32,
+                                        );
+                                        let _ = SetWindowPos(
+                                            hwnd,
+                                            None,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            SWP_NOMOVE
+                                                | SWP_NOSIZE
+                                                | SWP_NOZORDER
+                                                | SWP_FRAMECHANGED,
+                                        );
+                                    }
+                                    // 方角：否则纸页四角会被 DWM 削圆
+                                    let square: u32 = 1;
+                                    let _ = DwmSetWindowAttribute(
+                                        hwnd,
+                                        DWMWA_WINDOW_CORNER_PREFERENCE,
+                                        &square as *const _
+                                            as *const core::ffi::c_void,
+                                        4,
+                                    );
+                                    // 不要描边
+                                    let no_border: u32 = 0xFFFF_FFFE;
+                                    let _ = DwmSetWindowAttribute(
+                                        hwnd,
+                                        DWMWA_BORDER_COLOR,
+                                        &no_border as *const _
+                                            as *const core::ffi::c_void,
+                                        4,
+                                    );
+                                    if i % 10 == 0 {
+                                        use std::io::Write;
+                                        if let Ok(mut f) =
+                                            std::fs::OpenOptions::new()
+                                                .create(true)
+                                                .append(true)
+                                                .open(&log_path)
+                                        {
+                                            let _ = writeln!(
+                                                f,
+                                                "t={:.1}s style=0x{:08x} -> 0x{:08x}",
+                                                i as f32 * 0.05,
+                                                style,
+                                                want
+                                            );
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        tokio::time::sleep(
+                            std::time::Duration::from_millis(50),
+                        )
+                        .await;
+                    }
+                });
             }
 
             let app_handle = app.handle().clone();
@@ -1116,7 +1213,7 @@ fn main() {
                     DialogBuilder::message()
                         .set_level(MessageLevel::Error)
                         .set_title("Initialization error")
-                        .set_text("Your Microsoft Edge WebView2 installation is corrupt.\n\nMicrosoft Edge WebView2 is required to run Axolotl Launcher.\n\nRepair or reinstall the Microsoft Edge WebView2 Runtime, then start Axolotl again.")
+                        .set_text("Your Microsoft Edge WebView2 installation is corrupt.\n\nMicrosoft Edge WebView2 is required to run Endpaper.\n\nRepair or reinstall the Microsoft Edge WebView2 Runtime, then start Axolotl again.")
                         .alert()
                         .show()
                         .unwrap();

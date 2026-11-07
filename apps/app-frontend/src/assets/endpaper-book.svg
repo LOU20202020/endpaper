@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 786 652" width="786" height="652" role="img" aria-label="Endpaper">
+  <title>Endpaper</title>
+  <!-- 封面 -->
+  <path d="M52 172 C 198 132 300 146 393 184 L 393 560 C 294 524 184 514 52 548 Z" fill="#16233d"/>
+  <path d="M734 172 C 588 132 486 146 393 184 L 393 560 C 492 524 602 514 734 548 Z" fill="#16233d"/>
+
+  <!-- 米白书页 -->
+  <path d="M80 196 C 210 160 306 174 383 202 L 383 520 C 298 490 200 484 80 510 Z" fill="#f6f0dd"/>
+  <path d="M706 196 C 576 160 480 174 403 202 L 403 520 C 488 490 586 484 706 510 Z" fill="#f6f0dd"/>
+
+  <!-- 页脚阴影 -->
+  <path d="M80 462 C 200 436 298 442 383 472 L 383 520 C 298 490 200 484 80 510 Z" fill="#e3d9be"/>
+  <path d="M706 462 C 586 436 488 442 403 472 L 403 520 C 488 490 586 484 706 510 Z" fill="#e3d9be"/>
+
+  <!-- 赭石书脊（加粗，小尺寸也看得见） -->
+  <path d="M377 180 L 409 180 L 409 526 L 377 526 Z" fill="#a8622f"/>
+
+  <!-- 右页苦力怕（放大 1.35 倍，居中偏上） -->
+  <g fill="#16233d">
+    <rect x="504" y="262" width="58" height="58" rx="8"/>
+    <rect x="636" y="262" width="58" height="58" rx="8"/>
+    <rect x="562" y="320" width="26" height="46" rx="6"/>
+    <rect x="610" y="320" width="26" height="46" rx="6"/>
+    <rect x="566" y="382" width="66" height="34" rx="8"/>
+    <rect x="586" y="416" width="26" height="24" rx="6"/>
+  </g>
+
+  <!-- 米白细边 -->
+  <path d="M52 172 C 198 132 300 146 393 184 C 486 146 588 132 734 172 L 734 548 C 602 514 492 524 393 560 C 294 524 184 514 52 548 Z"
+        fill="none" stroke="#f6f0dd" stroke-width="10" stroke-linejoin="round"/>
+</svg>
