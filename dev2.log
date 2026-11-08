@@ -1,1542 +1,0 @@
- WARN  Unsupported engine: wanted: {"node":">=24.15.0"} (current: {"node":"v22.23.2","pnpm":"10.33.2"})
-
-> @axolotl/monorepo@0.0.0 app:dev C:\Users\LOU0122\endpaper-ax
-> turbo run dev --filter=@modrinth/app
-
-
-   • turbo 2.11.10
-   • Packages in scope: @modrinth/app
-   • Running dev in 1 package
-   • Remote caching disabled
-
-@modrinth/app:dev: cache bypass, force executing afcee6522f6440d8
-@modrinth/app:dev: ../..                                    |  WARN  Unsupported engine: wanted: {"node":">=24.15.0"} (current: {"node":"v22.23.2","pnpm":"10.33.2"})
-@modrinth/app:dev: 
-@modrinth/app:dev: > @modrinth/app@ dev C:\Users\LOU0122\endpaper-ax\apps\app
-@modrinth/app:dev: > tauri dev
-@modrinth/app:dev: 
-@modrinth/app:dev:         Info `tauri-build` dependency has workspace inheritance enabled. The features array won't be automatically rewritten. Expected features: []
-@modrinth/app:dev:         Info `tauri` dependency has workspace inheritance enabled. The features array won't be automatically rewritten. Expected features: [macos-private-api, protocol-asset]
-@modrinth/app:dev:      Running BeforeDevCommand (`pnpm --filter @modrinth/app-frontend dev`)
-@modrinth/app:dev: ../..                                    |  WARN  Unsupported engine: wanted: {"node":">=24.15.0"} (current: {"node":"v22.23.2","pnpm":"10.33.2"})
-@modrinth/app:dev: 
-@modrinth/app:dev: > @modrinth/app-frontend@1.10.5 dev C:\Users\LOU0122\endpaper-ax\apps\app-frontend
-@modrinth/app:dev: > vite
-@modrinth/app:dev: 
-@modrinth/app:dev:         Warn Waiting for your frontend dev server to start on http://127.0.0.1:5201/...
-@modrinth/app:dev:         Warn Waiting for your frontend dev server to start on http://127.0.0.1:5201/...
-@modrinth/app:dev:         Warn Waiting for your frontend dev server to start on http://127.0.0.1:5201/...
-@modrinth/app:dev:         Warn Waiting for your frontend dev server to start on http://127.0.0.1:5201/...
-@modrinth/app:dev:         Warn Waiting for your frontend dev server to start on http://127.0.0.1:5201/...
-@modrinth/app:dev: [2m19:50:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
-@modrinth/app:dev: 
-@modrinth/app:dev:   [32m[1mVITE[22m v8.2.4[39m  [2mready in [0m[1m47082[22m[2m[0m ms[22m
-@modrinth/app:dev: 
-@modrinth/app:dev:   [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5201[22m/[39m
-@modrinth/app:dev:   ➜  Vue DevTools: Open http://127.0.0.1:5201/__devtools__/ as a separate window
-@modrinth/app:dev:   ➜  Vue DevTools: Press Alt(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
-@modrinth/app:dev: [2m19:50:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] scanning dependencies...
-@modrinth/app:dev:      Running DevCommand (`cargo  run --no-default-features --color always --`)
-@modrinth/app:dev: [31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
-@modrinth/app:dev:   C:/Users/LOU0122/endpaper-ax/apps/app-frontend/index.html
-@modrinth/app:dev: C:/Users/LOU0122/endpaper-ax/apps/app-frontend/public/easteregg/games/game.html
-@modrinth/app:dev: 
-@modrinth/app:dev:   [31mBuild failed with 1 error:
-@modrinth/app:dev: 
-@modrinth/app:dev: [31m[UNRESOLVED_IMPORT] [0mCould not resolve './AxolotlLogo.vue' in virtual-module:C:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue?id=0
-@modrinth/app:dev:     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m virtual-module:C:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue?id=0:26:8 [38;5;246m][0m
-@modrinth/app:dev:     [38;5;246m│[0m
-@modrinth/app:dev:  [38;5;246m26 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m'./AxolotlLogo.vue'
-@modrinth/app:dev:  [38;5;240m   │[0m        ─────────┬─────────  
-@modrinth/app:dev:  [38;5;240m   │[0m                 ╰─────────── Module not found.
-@modrinth/app:dev:  [38;5;240m   │[0m 
-@modrinth/app:dev:  [38;5;240m   │[0m [38;5;115mHelp[0m: 'virtual-module:C:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue?id=0' is imported by the following path:
-@modrinth/app:dev:  [38;5;240m   │[0m         - virtual-module:C:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue?id=0
-@modrinth/app:dev:  [38;5;240m   │[0m         - src/components/ui/AppTitlebar.vue
-@modrinth/app:dev:  [38;5;240m   │[0m         - virtual-module:C:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/App.vue?id=0
-@modrinth/app:dev:  [38;5;240m   │[0m         - src/App.vue
-@modrinth/app:dev:  [38;5;240m   │[0m         - src/main.js
-@modrinth/app:dev:  [38;5;240m   │[0m         - index.html
-@modrinth/app:dev: [38;5;246m────╯[0m
-@modrinth/app:dev: 
-@modrinth/app:dev:     at aggregateBindingErrorsIntoJsError (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/rolldown@1.2.15/node_modules/rolldown/dist/shared/error-D0SD8_tL.mjs:49:18)
-@modrinth/app:dev:     at unwrapBindingResult (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/rolldown@1.2.15/node_modules/rolldown/dist/shared/error-D0SD8_tL.mjs:19:128)
-@modrinth/app:dev:     at scan (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/rolldown@1.2.15/node_modules/rolldown/dist/experimental-index.mjs:238:3)
-@modrinth/app:dev:     at async Object.build (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31663:3)
-@modrinth/app:dev:     at async scan (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31602:4)
-@modrinth/app:dev:     at async file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:34632:15[39m
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\apps\app for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\daedalus for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\launcher-mcp for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\launcher-tools for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\app-lib for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\ariadne for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\async-minecraft-ping for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\content-management for changes...
-@modrinth/app:dev:         Info Watching C:\Users\LOU0122\endpaper-ax\packages\path-util for changes...
-@modrinth/app:dev: [2m19:50:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
-@modrinth/app:dev: [1m[92m   Compiling[0m theseus_gui v1.10.5 (C:\Users\LOU0122\endpaper-ax\apps\app)
-@modrinth/app:dev: [1m[92m   Compiling[0m theseus v1.10.5 (C:\Users\LOU0122\endpaper-ax\packages\app-lib)
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 882/885: theseus…@modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: unused import: `ProxyPolicy`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\native.rs:13:41
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m13[0m [1m[96m|[0m use crate::util::fetch::{DownloadRoute, ProxyPolicy};
-@modrinth/app:dev:    [1m[96m|[0m                                         [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 882/885: theseus…@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::dirs::DirectoryInfo::move_launcher_directory`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\dirs.rs:326:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m326[0m [1m[96m|[0m [1m[93m/[0m     pub async fn move_launcher_directory(
-@modrinth/app:dev: [1m[96m327[0m [1m[96m|[0m [1m[93m|[0m         settings: &mut Settings,
-@modrinth/app:dev: [1m[96m328[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m329[0m [1m[96m|[0m [1m[93m|[0m         pool: &SqlitePool,
-@modrinth/app:dev: [1m[96m330[0m [1m[96m|[0m [1m[93m|[0m         io_semaphore: &IoSemaphore,
-@modrinth/app:dev: [1m[96m331[0m [1m[96m|[0m [1m[93m|[0m         app_identifier: &str,
-@modrinth/app:dev: [1m[96m332[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `state::dirs::DirectoryInfo::move_launcher_directory` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `#[warn(private_interfaces)]` on by default
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::settings::Settings::get`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\settings.rs:453:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m453[0m [1m[96m|[0m     pub async fn get(handle: &Handle) -> crate::Result<Self> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93massociated function `state::settings::Settings::get` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::settings::Settings::update`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\settings.rs:656:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m656[0m [1m[96m|[0m     pub async fn update(&self, handle: &Handle) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93mmethod `state::settings::Settings::update` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::settings::Settings::migrate`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\settings.rs:900:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m900[0m [1m[96m|[0m     pub async fn migrate(handle: &Handle) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93massociated function `state::settings::Settings::migrate` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `DerivedDb` is more private than the item `state::discovered_javas::DiscoveredJava::get_all`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\discovered_javas.rs:76:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m76[0m [1m[96m|[0m     pub async fn get_all(derived: &DerivedDb) -> crate::Result<Vec<Self>> {
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93massociated function `state::discovered_javas::DiscoveredJava::get_all` is reachable at visibility `pub`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `DerivedDb` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\derived_db.rs:42:1
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m42[0m [1m[96m|[0m pub(crate) struct DerivedDb {
-@modrinth/app:dev:    [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `DerivedDb` is more private than the item `state::discovered_javas::DiscoveredJava::upsert`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\discovered_javas.rs:93:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m93[0m [1m[96m|[0m     pub async fn upsert(&self, derived: &DerivedDb) -> crate::Result<()> {
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93mmethod `state::discovered_javas::DiscoveredJava::upsert` is reachable at visibility `pub`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `DerivedDb` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\derived_db.rs:42:1
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m42[0m [1m[96m|[0m pub(crate) struct DerivedDb {
-@modrinth/app:dev:    [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `DerivedDb` is more private than the item `state::discovered_javas::DiscoveredJava::remove`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\discovered_javas.rs:103:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m103[0m [1m[96m|[0m     pub async fn remove(path: &str, derived: &DerivedDb) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93massociated function `state::discovered_javas::DiscoveredJava::remove` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `DerivedDb` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\derived_db.rs:42:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 42[0m [1m[96m|[0m pub(crate) struct DerivedDb {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `DerivedDb` is more private than the item `state::discovered_javas::DiscoveredJava::replace_all`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\discovered_javas.rs:113:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m113[0m [1m[96m|[0m [1m[93m/[0m     pub async fn replace_all(
-@modrinth/app:dev: [1m[96m114[0m [1m[96m|[0m [1m[93m|[0m         derived: &DerivedDb,
-@modrinth/app:dev: [1m[96m115[0m [1m[96m|[0m [1m[93m|[0m         entries: &[Self],
-@modrinth/app:dev: [1m[96m116[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `state::discovered_javas::DiscoveredJava::replace_all` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `DerivedDb` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\derived_db.rs:42:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 42[0m [1m[96m|[0m pub(crate) struct DerivedDb {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::device_login_poll`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:193:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m193[0m [1m[96m|[0m [1m[93m/[0m pub async fn device_login_poll(
-@modrinth/app:dev: [1m[96m194[0m [1m[96m|[0m [1m[93m|[0m     device_code: &str,
-@modrinth/app:dev: [1m[96m195[0m [1m[96m|[0m [1m[93m|[0m     handle: &Handle,
-@modrinth/app:dev: [1m[96m196[0m [1m[96m|[0m [1m[93m|[0m ) -> crate::Result<MinecraftDeviceLoginPoll> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|____________________________________________^[0m [1m[93mfunction `state::minecraft_auth::device_login_poll` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::login_finish`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:253:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m253[0m [1m[96m|[0m [1m[93m/[0m pub async fn login_finish(
-@modrinth/app:dev: [1m[96m254[0m [1m[96m|[0m [1m[93m|[0m     code: &str,
-@modrinth/app:dev: [1m[96m255[0m [1m[96m|[0m [1m[93m|[0m     state: &str,
-@modrinth/app:dev: [1m[96m256[0m [1m[96m|[0m [1m[93m|[0m     flow: MinecraftLoginFlow,
-@modrinth/app:dev: [1m[96m257[0m [1m[96m|[0m [1m[93m|[0m     handle: &Handle,
-@modrinth/app:dev: [1m[96m258[0m [1m[96m|[0m [1m[93m|[0m ) -> crate::Result<Credentials> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|_______________________________^[0m [1m[93mfunction `state::minecraft_auth::login_finish` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::get_default_credential`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:863:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m863[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_default_credential(
-@modrinth/app:dev: [1m[96m864[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m865[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Option<Credentials>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|___________________________________________^[0m [1m[93massociated function `state::minecraft_auth::Credentials::get_default_credential` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::get_active`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:900:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m900[0m [1m[96m|[0m     pub async fn get_active(handle: &Handle) -> crate::Result<Option<Self>> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93massociated function `state::minecraft_auth::Credentials::get_active` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::get_active_without_refresh`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:904:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m904[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_active_without_refresh(
-@modrinth/app:dev: [1m[96m905[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m906[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Option<Self>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|____________________________________^[0m [1m[93massociated function `state::minecraft_auth::Credentials::get_active_without_refresh` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::get_all`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:931:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m931[0m [1m[96m|[0m     pub async fn get_all(handle: &Handle) -> crate::Result<Vec<Self>> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93massociated function `state::minecraft_auth::Credentials::get_all` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::get_all_without_refresh`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:935:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m935[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_all_without_refresh(
-@modrinth/app:dev: [1m[96m936[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m937[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Vec<Self>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|_________________________________^[0m [1m[93massociated function `state::minecraft_auth::Credentials::get_all_without_refresh` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::get_offline_credential`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:959:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m959[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_offline_credential(
-@modrinth/app:dev: [1m[96m960[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m961[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Option<Self>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|____________________________________^[0m [1m[93massociated function `state::minecraft_auth::Credentials::get_offline_credential` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::upsert`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:976:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m976[0m [1m[96m|[0m     pub async fn upsert(&self, handle: &Handle) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93mmethod `state::minecraft_auth::Credentials::upsert` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::Credentials::remove`[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:1015:5
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1015[0m [1m[96m|[0m [1m[93m/[0m     pub async fn remove(
-@modrinth/app:dev: [1m[96m1016[0m [1m[96m|[0m [1m[93m|[0m         account_id: &str,
-@modrinth/app:dev: [1m[96m1017[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m1018[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:      [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `state::minecraft_auth::Credentials::remove` is reachable at visibility `pub`[0m
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m  92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:      [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::minecraft_auth::DeviceTokenPair::upsert`[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth.rs:1131:5
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1131[0m [1m[96m|[0m     pub async fn upsert(&self, handle: &Handle) -> crate::Result<()> {
-@modrinth/app:dev:      [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[93mmethod `state::minecraft_auth::DeviceTokenPair::upsert` is reachable at visibility `pub`[0m
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m  92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:      [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `yggdrasil::begin_yggdrasil_login`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth\yggdrasil.rs:166:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m166[0m [1m[96m|[0m [1m[93m/[0m pub async fn begin_yggdrasil_login(
-@modrinth/app:dev: [1m[96m167[0m [1m[96m|[0m [1m[93m|[0m     api_root: &str,
-@modrinth/app:dev: [1m[96m168[0m [1m[96m|[0m [1m[93m|[0m     login: &str,
-@modrinth/app:dev: [1m[96m169[0m [1m[96m|[0m [1m[93m|[0m     password: &str,
-@modrinth/app:dev: [1m[96m170[0m [1m[96m|[0m [1m[93m|[0m     handle: &Handle,
-@modrinth/app:dev: [1m[96m171[0m [1m[96m|[0m [1m[93m|[0m ) -> crate::Result<YggdrasilLoginResult> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|________________________________________^[0m [1m[93mfunction `yggdrasil::begin_yggdrasil_login` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `yggdrasil::finish_yggdrasil_login`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth\yggdrasil.rs:268:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m268[0m [1m[96m|[0m [1m[93m/[0m pub async fn finish_yggdrasil_login(
-@modrinth/app:dev: [1m[96m269[0m [1m[96m|[0m [1m[93m|[0m     flow_id: Uuid,
-@modrinth/app:dev: [1m[96m270[0m [1m[96m|[0m [1m[93m|[0m     profile_id: Uuid,
-@modrinth/app:dev: [1m[96m271[0m [1m[96m|[0m [1m[93m|[0m     handle: &Handle,
-@modrinth/app:dev: [1m[96m272[0m [1m[96m|[0m [1m[93m|[0m ) -> crate::Result<Credentials> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|_______________________________^[0m [1m[93mfunction `yggdrasil::finish_yggdrasil_login` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `yggdrasil::refresh_yggdrasil_credentials`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_auth\yggdrasil.rs:331:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m331[0m [1m[96m|[0m [1m[93m/[0m pub async fn refresh_yggdrasil_credentials(
-@modrinth/app:dev: [1m[96m332[0m [1m[96m|[0m [1m[93m|[0m     credentials: &mut Credentials,
-@modrinth/app:dev: [1m[96m333[0m [1m[96m|[0m [1m[93m|[0m     handle: &Handle,
-@modrinth/app:dev: [1m[96m334[0m [1m[96m|[0m [1m[93m|[0m ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|______________________^[0m [1m[93mfunction `yggdrasil::refresh_yggdrasil_credentials` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `OfflineMinecraftSkin::get`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:55:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m55[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get(
-@modrinth/app:dev: [1m[96m56[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m57[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m58[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Option<Self>> {
-@modrinth/app:dev:    [1m[96m|[0m [1m[93m|____________________________________^[0m [1m[93massociated function `OfflineMinecraftSkin::get` is reachable at visibility `pub`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:    [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `OfflineMinecraftSkin::set`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:69:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m69[0m [1m[96m|[0m [1m[93m/[0m     pub async fn set(
-@modrinth/app:dev: [1m[96m70[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m71[0m [1m[96m|[0m [1m[93m|[0m         texture_key: &str,
-@modrinth/app:dev: [1m[96m72[0m [1m[96m|[0m [1m[93m|[0m         variant: MinecraftSkinVariant,
-@modrinth/app:dev: [1m[96m73[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m74[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:    [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `OfflineMinecraftSkin::set` is reachable at visibility `pub`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:    [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `OfflineMinecraftSkin::clear`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:88:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m88[0m [1m[96m|[0m [1m[93m/[0m     pub async fn clear(
-@modrinth/app:dev: [1m[96m89[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m90[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m91[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:    [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `OfflineMinecraftSkin::clear` is reachable at visibility `pub`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:    [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `OfflineMinecraftSkin::clear_if_texture`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:96:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 96[0m [1m[96m|[0m [1m[93m/[0m     pub async fn clear_if_texture(
-@modrinth/app:dev: [1m[96m 97[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m 98[0m [1m[96m|[0m [1m[93m|[0m         texture_key: &str,
-@modrinth/app:dev: [1m[96m 99[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m100[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `OfflineMinecraftSkin::clear_if_texture` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::add`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:138:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m138[0m [1m[96m|[0m [1m[93m/[0m     pub async fn add(
-@modrinth/app:dev: [1m[96m139[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m140[0m [1m[96m|[0m [1m[93m|[0m         texture_key: &str,
-@modrinth/app:dev: [1m[96m141[0m [1m[96m|[0m [1m[93m|[0m         texture: &[u8],
-@modrinth/app:dev: [1m[96m...[0m   [1m[93m|[0m
-@modrinth/app:dev: [1m[96m145[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m146[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `CustomMinecraftSkin::add` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::get_by_texture`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:222:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m222[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_by_texture(
-@modrinth/app:dev: [1m[96m223[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m224[0m [1m[96m|[0m [1m[93m|[0m         texture_key: &str,
-@modrinth/app:dev: [1m[96m225[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m226[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Option<Self>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|____________________________________^[0m [1m[93massociated function `CustomMinecraftSkin::get_by_texture` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::get_many`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:238:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m238[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_many(
-@modrinth/app:dev: [1m[96m239[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m240[0m [1m[96m|[0m [1m[93m|[0m         offset: u32,
-@modrinth/app:dev: [1m[96m241[0m [1m[96m|[0m [1m[93m|[0m         count: u32,
-@modrinth/app:dev: [1m[96m242[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m243[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<impl Stream<Item = Self>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|________________________________________________^[0m [1m[93massociated function `CustomMinecraftSkin::get_many` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::get_all`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:260:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m260[0m [1m[96m|[0m [1m[93m/[0m     pub async fn get_all(
-@modrinth/app:dev: [1m[96m261[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m262[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m263[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<impl Stream<Item = Self>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|________________________________________________^[0m [1m[93massociated function `CustomMinecraftSkin::get_all` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::texture_blob`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:269:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m269[0m [1m[96m|[0m [1m[93m/[0m     pub async fn texture_blob(
-@modrinth/app:dev: [1m[96m270[0m [1m[96m|[0m [1m[93m|[0m         &self,
-@modrinth/app:dev: [1m[96m271[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m272[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<Vec<u8>> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|_______________________________^[0m [1m[93mmethod `CustomMinecraftSkin::texture_blob` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::remove`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:287:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m287[0m [1m[96m|[0m [1m[93m/[0m     pub async fn remove(
-@modrinth/app:dev: [1m[96m288[0m [1m[96m|[0m [1m[93m|[0m         &self,
-@modrinth/app:dev: [1m[96m289[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m290[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m291[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93mmethod `CustomMinecraftSkin::remove` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `CustomMinecraftSkin::set_order`[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\minecraft_skins\mod.rs:300:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m300[0m [1m[96m|[0m [1m[93m/[0m     pub async fn set_order(
-@modrinth/app:dev: [1m[96m301[0m [1m[96m|[0m [1m[93m|[0m         minecraft_user_id: Uuid,
-@modrinth/app:dev: [1m[96m302[0m [1m[96m|[0m [1m[93m|[0m         texture_keys: &[String],
-@modrinth/app:dev: [1m[96m303[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m304[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93massociated function `CustomMinecraftSkin::set_order` is reachable at visibility `pub`[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:     [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type `state::store::Handle` is more private than the item `state::friends::FriendsSocket::connect`[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\friends.rs:72:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m72[0m [1m[96m|[0m [1m[93m/[0m     pub async fn connect(
-@modrinth/app:dev: [1m[96m73[0m [1m[96m|[0m [1m[93m|[0m         &self,
-@modrinth/app:dev: [1m[96m74[0m [1m[96m|[0m [1m[93m|[0m         handle: &Handle,
-@modrinth/app:dev: [1m[96m75[0m [1m[96m|[0m [1m[93m|[0m         semaphore: &FetchSemaphore,
-@modrinth/app:dev: [1m[96m76[0m [1m[96m|[0m [1m[93m|[0m         process_manager: &ProcessManager,
-@modrinth/app:dev: [1m[96m77[0m [1m[96m|[0m [1m[93m|[0m     ) -> crate::Result<()> {
-@modrinth/app:dev:    [1m[96m|[0m [1m[93m|__________________________^[0m [1m[93mmethod `state::friends::FriendsSocket::connect` is reachable at visibility `pub`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[92mnote[0m: but type `state::store::Handle` is only usable at visibility `pub(crate)`
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\mod.rs:92:1
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m92[0m [1m[96m|[0m pub(crate) struct Handle {
-@modrinth/app:dev:    [1m[96m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: constant `CURSEFORGE_OVERRIDE_EXTRACTION_CONCURRENCY` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\constants.rs:334:18
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m334[0m [1m[96m|[0m pub(crate) const CURSEFORGE_OVERRIDE_EXTRACTION_CONCURRENCY: usize = 4;
-@modrinth/app:dev:     [1m[96m|[0m                  [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: constant `H2_RANGE_INVALID_RANGE_RESUME_URL` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\constants.rs:370:18
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m370[0m [1m[96m|[0m pub(crate) const H2_RANGE_INVALID_RANGE_RESUME_URL: &str =
-@modrinth/app:dev:     [1m[96m|[0m                  [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: field `status` is never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\endpoint_selection\coordinator.rs:136:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m131[0m [1m[96m|[0m struct ActiveRound {
-@modrinth/app:dev:     [1m[96m|[0m        [1m[96m-----------[0m [1m[96mfield in this struct[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m136[0m [1m[96m|[0m     status: watch::Sender<RoundStatus>,
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `on_slow` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\endpoint_selection\coordinator.rs:736:19
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m283[0m [1m[96m|[0m impl EndpointSelector {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m---------------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m736[0m [1m[96m|[0m     pub(crate) fn on_slow(
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[93m^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: variant `Verified` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\endpoint_selection\model.rs:12:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m10[0m [1m[96m|[0m pub(super) enum CandidateSource {
-@modrinth/app:dev:    [1m[96m|[0m                 [1m[96m---------------[0m [1m[96mvariant in this enum[0m
-@modrinth/app:dev: [1m[96m11[0m [1m[96m|[0m     Dns(DnsSource),
-@modrinth/app:dev: [1m[96m12[0m [1m[96m|[0m     Verified,
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `CandidateSource` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: fields `source` and `expires_at` are never read[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\endpoint_selection\model.rs:61:16
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m59[0m [1m[96m|[0m pub(crate) struct EndpointLease {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[96m-------------[0m [1m[96mfields in this struct[0m
-@modrinth/app:dev: [1m[96m60[0m [1m[96m|[0m     pub(crate) pool: PoolKey,
-@modrinth/app:dev: [1m[96m61[0m [1m[96m|[0m     pub(super) source: CandidateSource,
-@modrinth/app:dev:    [1m[96m|[0m                [1m[93m^^^^^^[0m
-@modrinth/app:dev: [1m[96m62[0m [1m[96m|[0m     pub(crate) expires_at: Instant,
-@modrinth/app:dev:    [1m[96m|[0m                [1m[93m^^^^^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `EndpointLease` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `used` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\endpoint_selection\policy.rs:56:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m31[0m [1m[96m|[0m impl ProbeBudget {
-@modrinth/app:dev:    [1m[96m|[0m [1m[96m----------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m56[0m [1m[96m|[0m     pub(super) fn used(&self) -> u64 {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `should_publish` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\endpoint_selection\policy.rs:139:15
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m139[0m [1m[96m|[0m pub(super) fn should_publish(
-@modrinth/app:dev:     [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: field `route` is never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\h2_download.rs:911:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m909[0m [1m[96m|[0m struct AssetBatchConnectionGroup {
-@modrinth/app:dev:     [1m[96m|[0m        [1m[96m-------------------------[0m [1m[96mfield in this struct[0m
-@modrinth/app:dev: [1m[96m910[0m [1m[96m|[0m     primary: Arc<SharedH2Connection>,
-@modrinth/app:dev: [1m[96m911[0m [1m[96m|[0m     route: DownloadRoute,
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `connection` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download\h2_download.rs:951:14
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m915[0m [1m[96m|[0m impl AssetBatchConnectionGroup {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m------------------------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m951[0m [1m[96m|[0m     async fn connection(&self, rescue: bool) -> Arc<SharedH2Connection> {
-@modrinth/app:dev:     [1m[96m|[0m              [1m[93m^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `budget` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\h2_stream_budget.rs:51:4
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m51[0m [1m[96m|[0m fn budget(route: &DownloadRoute) -> Option<Arc<Semaphore>> {
-@modrinth/app:dev:    [1m[96m|[0m    [1m[93m^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `acquire` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\h2_stream_budget.rs:80:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m80[0m [1m[96m|[0m pub(crate) async fn acquire(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `send_cdn_request_with_clients` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\native_request.rs:44:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m44[0m [1m[96m|[0m pub(crate) async fn send_cdn_request_with_clients(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: variant `Commit` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\native_slow.rs:27:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m23[0m [1m[96m|[0m pub(crate) enum SlowDecision {
-@modrinth/app:dev:    [1m[96m|[0m                 [1m[96m------------[0m [1m[96mvariant in this enum[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m27[0m [1m[96m|[0m     Commit,
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `SlowDecision` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `fingerprint` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\download\proxy_context.rs:40:15
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m40[0m [1m[96m|[0m pub(crate) fn fingerprint(
-@modrinth/app:dev:    [1m[96m|[0m               [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `score` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\util\download_dns.rs:887:8
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m185[0m [1m[96m|[0m impl DownloadDnsResolver {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m------------------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m887[0m [1m[96m|[0m     fn score(&self, address: IpAddr) -> f64 {
-@modrinth/app:dev:     [1m[96m|[0m        [1m[93m^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `authority_uses_http1_fallback` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\fetch\throttle.rs:67:15
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m67[0m [1m[96m|[0m pub(crate) fn authority_uses_http1_fallback(authority: &str) -> bool {
-@modrinth/app:dev:    [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `record_authority_h2_failure` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\util\fetch\throttle.rs:95:15
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m95[0m [1m[96m|[0m pub(crate) fn record_authority_h2_failure(authority: &str) {
-@modrinth/app:dev:    [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: associated function `new` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\curseforge\dto.rs:233:19
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m232[0m [1m[96m|[0m impl CurseForgeFileDependency {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m-----------------------------[0m [1m[96massociated function in this implementation[0m
-@modrinth/app:dev: [1m[96m233[0m [1m[96m|[0m     pub(crate) fn new(mod_id: u32, relation: DependencyRelation) -> Self {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[93m^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `extract_all` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\api\drop_classifier.rs:1207:4
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1207[0m [1m[96m|[0m fn extract_all(
-@modrinth/app:dev:      [1m[96m|[0m    [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `classify_folder_content` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\api\drop_classifier.rs:1595:15
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1595[0m [1m[96m|[0m pub(crate) fn classify_folder_content(
-@modrinth/app:dev:      [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `get_instance_display_info` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\projects.rs:751:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m751[0m [1m[96m|[0m async fn get_instance_display_info(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: constant `FULLSCREEN_OPTION_ID` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\fullscreen.rs:23:7
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m23[0m [1m[96m|[0m const FULLSCREEN_OPTION_ID: &str = "fullscreen";
-@modrinth/app:dev:    [1m[96m|[0m       [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `shared_fullscreen_value` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\fullscreen.rs:25:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m25[0m [1m[96m|[0m pub(crate) async fn shared_fullscreen_value(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `update_shared_fullscreen_from_app` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\fullscreen.rs:47:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m47[0m [1m[96m|[0m pub(crate) async fn update_shared_fullscreen_from_app(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `Candidate` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\mod.rs:76:8
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m76[0m [1m[96m|[0m struct Candidate {
-@modrinth/app:dev:    [1m[96m|[0m        [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `start_game_locale_indexer` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\mod.rs:96:15
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m96[0m [1m[96m|[0m pub(crate) fn start_game_locale_indexer(state: Arc<State>) {
-@modrinth/app:dev:    [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `index_installed_sources` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\mod.rs:222:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m222[0m [1m[96m|[0m async fn index_installed_sources(state: &State) -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `checked_bytes` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\archive.rs:269:15
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m269[0m [1m[96m|[0m pub(super) fn checked_bytes(
-@modrinth/app:dev:     [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: type alias `ArchiveKeys` is never used[0m
-@modrinth/app:dev:  [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\origins.rs:8:6
-@modrinth/app:dev:   [1m[96m|[0m
-@modrinth/app:dev: [1m[96m8[0m [1m[96m|[0m type ArchiveKeys = BTreeMap<String, Arc<str>>;
-@modrinth/app:dev:   [1m[96m|[0m      [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `SnapshotIndex` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\origins.rs:10:8
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m10[0m [1m[96m|[0m struct SnapshotIndex {
-@modrinth/app:dev:    [1m[96m|[0m        [1m[93m^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `OriginResolver` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\origins.rs:16:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m16[0m [1m[96m|[0m pub(super) struct OriginResolver {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: methods `index_snapshot` and `resolve` are never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\origins.rs:22:25
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m21[0m [1m[96m|[0m impl OriginResolver {
-@modrinth/app:dev:    [1m[96m|[0m [1m[96m-------------------[0m [1m[96mmethods in this implementation[0m
-@modrinth/app:dev: [1m[96m22[0m [1m[96m|[0m     pub(super) async fn index_snapshot(
-@modrinth/app:dev:    [1m[96m|[0m                         [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m69[0m [1m[96m|[0m     pub(super) async fn resolve(
-@modrinth/app:dev:    [1m[96m|[0m                         [1m[93m^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `load_archive_keys` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\origins.rs:100:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m100[0m [1m[96m|[0m async fn load_archive_keys(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `load_snapshot` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\sources.rs:149:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m149[0m [1m[96m|[0m pub(super) async fn load_snapshot(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: fields `source_instance_id`, `source_game_version`, `backfilled`, and `observation` are never read[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\storage.rs:11:9
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 8[0m [1m[96m|[0m pub(super) struct OriginRow {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[96m---------[0m [1m[96mfields in this struct[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m11[0m [1m[96m|[0m     pub source_instance_id: Option<String>,
-@modrinth/app:dev:    [1m[96m|[0m         [1m[93m^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m12[0m [1m[96m|[0m     pub source_game_version: Option<String>,
-@modrinth/app:dev:    [1m[96m|[0m         [1m[93m^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m13[0m [1m[96m|[0m     pub backfilled: bool,
-@modrinth/app:dev:    [1m[96m|[0m         [1m[93m^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m14[0m [1m[96m|[0m     pub observation: Option<Observation>,
-@modrinth/app:dev:    [1m[96m|[0m         [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `pin` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\locales\storage.rs:121:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m121[0m [1m[96m|[0m pub(super) async fn pin(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: enum `GameOptionsPackSource` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\pack_updates.rs:28:10
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m28[0m [1m[96m|[0m pub enum GameOptionsPackSource {
-@modrinth/app:dev:    [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: methods `as_str` and `is_yosbr` are never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\pack_updates.rs:36:8
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m35[0m [1m[96m|[0m impl GameOptionsPackSource {
-@modrinth/app:dev:    [1m[96m|[0m [1m[96m--------------------------[0m [1m[96mmethods in this implementation[0m
-@modrinth/app:dev: [1m[96m36[0m [1m[96m|[0m     fn as_str(self) -> &'static str {
-@modrinth/app:dev:    [1m[96m|[0m        [1m[93m^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m45[0m [1m[96m|[0m     fn is_yosbr(self) -> bool {
-@modrinth/app:dev:    [1m[96m|[0m        [1m[93m^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `pack_version_id` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\pack_updates.rs:65:4
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m65[0m [1m[96m|[0m fn pack_version_id(metadata: &InstanceMetadata) -> Option<&str> {
-@modrinth/app:dev:    [1m[96m|[0m    [1m[93m^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `prepare_instance_update_with_state` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\pack_updates.rs:157:39
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m157[0m [1m[96m|[0m pub(in crate::api::instance) async fn prepare_instance_update_with_state(
-@modrinth/app:dev:     [1m[96m|[0m                                       [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `capture_pack_base` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\game_options\pack_updates.rs:198:14
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m198[0m [1m[96m|[0m pub async fn capture_pack_base(
-@modrinth/app:dev:     [1m[96m|[0m              [1m[93m^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `get_synced_options_folder` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\orchestration.rs:137:14
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m137[0m [1m[96m|[0m pub async fn get_synced_options_folder() -> crate::Result<PathBuf> {
-@modrinth/app:dev:     [1m[96m|[0m              [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `reconcile_all` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\orchestration.rs:934:14
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m934[0m [1m[96m|[0m pub async fn reconcile_all() -> crate::Result<()> {
-@modrinth/app:dev:     [1m[96m|[0m              [1m[93m^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `prepare_instance_update` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_options\orchestration.rs:981:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m981[0m [1m[96m|[0m pub(crate) async fn prepare_instance_update(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `prepare_instance_update` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_packs_axolotl.rs:784:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m784[0m [1m[96m|[0m pub(crate) async fn prepare_instance_update(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `write_servers` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\codec.rs:60:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m60[0m [1m[96m|[0m pub(crate) async fn write_servers(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `server_data` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\codec.rs:89:15
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m89[0m [1m[96m|[0m pub(crate) fn server_data(
-@modrinth/app:dev:    [1m[96m|[0m               [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `server_hidden` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\codec.rs:120:15
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m120[0m [1m[96m|[0m pub(super) fn server_hidden(server: &NbtCompound) -> bool {
-@modrinth/app:dev:     [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `capture_modpack_servers` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\modpack.rs:16:14
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m16[0m [1m[96m|[0m pub async fn capture_modpack_servers(instance_id: &str) -> crate::Result<()> {
-@modrinth/app:dev:    [1m[96m|[0m              [1m[93m^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `clear_modpack_servers` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\modpack.rs:31:14
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m31[0m [1m[96m|[0m pub async fn clear_modpack_servers(instance_id: &str) -> crate::Result<()> {
-@modrinth/app:dev:    [1m[96m|[0m              [1m[93m^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `list_server_records` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:287:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m287[0m [1m[96m|[0m pub(crate) async fn list_server_records(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `list_server_records_locked` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:299:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m299[0m [1m[96m|[0m async fn list_server_records_locked(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `list_local_server_records` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:309:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m309[0m [1m[96m|[0m async fn list_local_server_records(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `ensure_managed_server` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:327:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m327[0m [1m[96m|[0m pub(crate) async fn ensure_managed_server(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `add_user_server` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:419:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m419[0m [1m[96m|[0m pub(crate) async fn add_user_server(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `update_server_locked` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:447:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m447[0m [1m[96m|[0m async fn update_server_locked(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `update_server_by_index` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:493:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m493[0m [1m[96m|[0m pub(crate) async fn update_server_by_index(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `remove_server_locked` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:530:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m530[0m [1m[96m|[0m async fn remove_server_locked(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `remove_server_by_index` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\operations.rs:560:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m560[0m [1m[96m|[0m pub(crate) async fn remove_server_by_index(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `read_server_snapshot` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\storage.rs:64:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m64[0m [1m[96m|[0m pub(super) async fn read_server_snapshot(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: methods `name`, `address`, `icon`, `hidden`, and `accept_textures` are never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\api\instance\synced_servers\types.rs:57:12
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m56[0m [1m[96m|[0m impl ServerRecord {
-@modrinth/app:dev:    [1m[96m|[0m [1m[96m-----------------[0m [1m[96mmethods in this implementation[0m
-@modrinth/app:dev: [1m[96m57[0m [1m[96m|[0m     pub fn name(&self) -> String {
-@modrinth/app:dev:    [1m[96m|[0m            [1m[93m^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m64[0m [1m[96m|[0m     pub fn address(&self) -> String {
-@modrinth/app:dev:    [1m[96m|[0m            [1m[93m^^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m71[0m [1m[96m|[0m     pub fn icon(&self) -> Option<String> {
-@modrinth/app:dev:    [1m[96m|[0m            [1m[93m^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m75[0m [1m[96m|[0m     pub fn hidden(&self) -> bool {
-@modrinth/app:dev:    [1m[96m|[0m            [1m[93m^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m79[0m [1m[96m|[0m     pub fn accept_textures(&self) -> Option<bool> {
-@modrinth/app:dev:    [1m[96m|[0m            [1m[93m^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `InstanceBulkUpdateProgressPayload` is never constructed[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\event\mod.rs:222:12
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m222[0m [1m[96m|[0m pub struct InstanceBulkUpdateProgressPayload {
-@modrinth/app:dev:     [1m[96m|[0m            [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: enum `InstanceBulkUpdateProgressStage` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\event\mod.rs:231:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m231[0m [1m[96m|[0m pub enum InstanceBulkUpdateProgressStage {
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: variant `Restoring` is never constructed[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\event\mod.rs:281:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m275[0m [1m[96m|[0m pub enum InstanceBackupProgressStage {
-@modrinth/app:dev:     [1m[96m|[0m          [1m[96m---------------------------[0m [1m[96mvariant in this enum[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m281[0m [1m[96m|[0m     Restoring,
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `InstanceBackupProgressStage` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: variant `ContentInstallFailed` is never constructed[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\event\mod.rs:440:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m418[0m [1m[96m|[0m pub enum InstancePayloadType {
-@modrinth/app:dev:     [1m[96m|[0m          [1m[96m-------------------[0m [1m[96mvariant in this enum[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m440[0m [1m[96m|[0m     ContentInstallFailed {
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `InstancePayloadType` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `emit_instance_bulk_update_progress` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\event\emit.rs:289:14
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m289[0m [1m[96m|[0m pub async fn emit_instance_bulk_update_progress(
-@modrinth/app:dev:     [1m[96m|[0m              [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `ensure_linked_assets` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\launcher\direct_ensure.rs:406:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m406[0m [1m[96m|[0m pub(crate) async fn ensure_linked_assets(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `ensure_linked_assets_from` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\launcher\direct_ensure.rs:423:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m423[0m [1m[96m|[0m pub(crate) async fn ensure_linked_assets_from(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `local_identity` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\resources\identity.rs:50:25
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m49[0m [1m[96m|[0m impl super::cache::ResourceCache {
-@modrinth/app:dev:    [1m[96m|[0m [1m[96m--------------------------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m50[0m [1m[96m|[0m     pub(crate) async fn local_identity(
-@modrinth/app:dev:    [1m[96m|[0m                         [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `curseforge_files_page` is never used[0m
-@modrinth/app:dev:  [1m[96m--> [0mpackages\app-lib\src\resources\legacy_catalog.rs:9:21
-@modrinth/app:dev:   [1m[96m|[0m
-@modrinth/app:dev: [1m[96m9[0m [1m[96m|[0m pub(crate) async fn curseforge_files_page(
-@modrinth/app:dev:   [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `scan_content_files` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\filesystem.rs:25:15
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m25[0m [1m[96m|[0m pub(crate) fn scan_content_files(
-@modrinth/app:dev:    [1m[96m|[0m               [1m[93m^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `get_config_sync_generated_at` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\config_sync_rows.rs:59:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m59[0m [1m[96m|[0m pub(crate) async fn get_config_sync_generated_at<'e, E>(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `upsert_content_update_check` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\content_entries.rs:871:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m871[0m [1m[96m|[0m pub(crate) async fn upsert_content_update_check(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: fields `instance_id`, `hosting_server_id`, `hosting_instance_ids`, and `hosting_active_instance_id` are never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\instance_rows.rs:195:9
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m194[0m [1m[96m|[0m pub(crate) struct InstanceLinkRow {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[96m---------------[0m [1m[96mfields in this struct[0m
-@modrinth/app:dev: [1m[96m195[0m [1m[96m|[0m     pub instance_id: String,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m202[0m [1m[96m|[0m     pub hosting_server_id: Option<String>,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m203[0m [1m[96m|[0m     pub hosting_instance_ids: Option<String>,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m204[0m [1m[96m|[0m     pub hosting_active_instance_id: Option<String>,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `InstanceLinkRow` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: field `groups` is never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\instance_rows.rs:289:9
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m285[0m [1m[96m|[0m pub(crate) struct InstanceMetadataRecord {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[96m----------------------[0m [1m[96mfield in this struct[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m289[0m [1m[96m|[0m     pub groups: Vec<String>,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `InstanceMetadataRecord` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: field `name` is never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\instance_rows.rs:296:9
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m294[0m [1m[96m|[0m pub(crate) struct InstanceDisplayInfo {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[96m-------------------[0m [1m[96mfield in this struct[0m
-@modrinth/app:dev: [1m[96m295[0m [1m[96m|[0m     pub id: String,
-@modrinth/app:dev: [1m[96m296[0m [1m[96m|[0m     pub name: String,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `InstanceDisplayInfo` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `has_desynced_synced_server` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\instance_servers.rs:112:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m112[0m [1m[96m|[0m pub(crate) async fn has_desynced_synced_server<'e, E>(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: fields `entry_id` and `ownership_kind` are never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\adapters\sqlite\pack_members.rs:203:9
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m202[0m [1m[96m|[0m pub(crate) struct ContentMutationTarget {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[96m---------------------[0m [1m[96mfields in this struct[0m
-@modrinth/app:dev: [1m[96m203[0m [1m[96m|[0m     pub entry_id: Option<String>,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m206[0m [1m[96m|[0m     pub ownership_kind: ContentOwnershipKind,
-@modrinth/app:dev:     [1m[96m|[0m         [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `ContentMutationTarget` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `list_all_content` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\instances\commands\list_content.rs:299:21
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m299[0m [1m[96m|[0m pub(crate) async fn list_all_content(
-@modrinth/app:dev:     [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `sync_content_files_for_operation` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\instances\commands\sync_content_files.rs:87:21
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m87[0m [1m[96m|[0m pub(crate) async fn sync_content_files_for_operation(
-@modrinth/app:dev:    [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `add_project_bytes_from_provider` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\instances\commands\apply_content_install.rs:2455:21
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m2455[0m [1m[96m|[0m pub(crate) async fn add_project_bytes_from_provider(
-@modrinth/app:dev:      [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `record_project_files_with_verified_curseforge_atomic` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\instances\commands\apply_content_install.rs:2863:21
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m2863[0m [1m[96m|[0m pub(crate) async fn record_project_files_with_verified_curseforge_atomic(
-@modrinth/app:dev:      [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: fields `legacy_use_minecraft_mirror`, `legacy_use_modrinth_mirror`, and `legacy_use_curseforge_mirror` are never read[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\settings.rs:135:5
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m109[0m [1m[96m|[0m pub struct Settings {
-@modrinth/app:dev:     [1m[96m|[0m            [1m[96m--------[0m [1m[96mfields in this struct[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m135[0m [1m[96m|[0m     legacy_use_minecraft_mirror: Option<bool>,
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m136[0m [1m[96m|[0m     #[serde(default, rename = "use_modrinth_mirror", skip_serializing)]
-@modrinth/app:dev: [1m[96m137[0m [1m[96m|[0m     legacy_use_modrinth_mirror: Option<bool>,
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: [1m[96m138[0m [1m[96m|[0m     #[serde(default, rename = "use_curseforge_mirror", skip_serializing)]
-@modrinth/app:dev: [1m[96m139[0m [1m[96m|[0m     legacy_use_curseforge_mirror: Option<bool>,
-@modrinth/app:dev:     [1m[96m|[0m     [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev:     [1m[96m= [0m[1m[97mnote[0m: `Settings` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `apply_legacy_download_source_settings` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\settings.rs:845:19
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m437[0m [1m[96m|[0m impl Settings {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m-------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m845[0m [1m[96m|[0m     pub(crate) fn apply_legacy_download_source_settings(&mut self) {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `legacy_download_source` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\settings.rs:988:4
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m988[0m [1m[96m|[0m fn legacy_download_source(enabled: bool) -> DownloadSourceMode {
-@modrinth/app:dev:     [1m[96m|[0m    [1m[93m^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `store` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\documents\settings.rs:1167:21
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1167[0m [1m[96m|[0m pub(crate) async fn store(
-@modrinth/app:dev:      [1m[96m|[0m                     [1m[93m^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `store_key` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\documents\settings.rs:1472:21
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1472[0m [1m[96m|[0m pub(crate) async fn store_key(
-@modrinth/app:dev:      [1m[96m|[0m                     [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `clear_key_if` is never used[0m
-@modrinth/app:dev:     [1m[96m--> [0mpackages\app-lib\src\state\documents\settings.rs:1555:21
-@modrinth/app:dev:      [1m[96m|[0m
-@modrinth/app:dev: [1m[96m1555[0m [1m[96m|[0m pub(crate) async fn clear_key_if(
-@modrinth/app:dev:      [1m[96m|[0m                     [1m[93m^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: method `is_disabled` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\derived_db.rs:134:19
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m 48[0m [1m[96m|[0m impl DerivedDb {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m--------------[0m [1m[96mmethod in this implementation[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m134[0m [1m[96m|[0m     pub(crate) fn is_disabled(&self) -> bool {
-@modrinth/app:dev:     [1m[96m|[0m                   [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `GameOptionPackBases` is never constructed[0m
-@modrinth/app:dev:  [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:8:19
-@modrinth/app:dev:   [1m[96m|[0m
-@modrinth/app:dev: [1m[96m8[0m [1m[96m|[0m pub(crate) struct GameOptionPackBases;
-@modrinth/app:dev:   [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `PackBaseKey` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:12:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m12[0m [1m[96m|[0m pub(crate) struct PackBaseKey {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: enum `PackBaseSource` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:18:17
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m18[0m [1m[96m|[0m pub(crate) enum PackBaseSource {
-@modrinth/app:dev:    [1m[96m|[0m                 [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: associated items `as_str` and `parse` are never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:25:25
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m24[0m [1m[96m|[0m impl PackBaseSource {
-@modrinth/app:dev:    [1m[96m|[0m [1m[96m-------------------[0m [1m[96massociated items in this implementation[0m
-@modrinth/app:dev: [1m[96m25[0m [1m[96m|[0m     pub(crate) const fn as_str(self) -> &'static str {
-@modrinth/app:dev:    [1m[96m|[0m                         [1m[93m^^^^^^[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m33[0m [1m[96m|[0m     fn parse(value: &str) -> Option<Self> {
-@modrinth/app:dev:    [1m[96m|[0m        [1m[93m^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `PackBaseRecord` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:45:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m45[0m [1m[96m|[0m pub(crate) struct PackBaseRecord {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `write_row` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:195:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m195[0m [1m[96m|[0m async fn write_row(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `to_source` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_pack_bases.rs:227:4
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m227[0m [1m[96m|[0m fn to_source(source: &str) -> Option<PackBaseSource> {
-@modrinth/app:dev:     [1m[96m|[0m    [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `GameOptionUpdateState` is never constructed[0m
-@modrinth/app:dev:  [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_update_state.rs:8:19
-@modrinth/app:dev:   [1m[96m|[0m
-@modrinth/app:dev: [1m[96m8[0m [1m[96m|[0m pub(crate) struct GameOptionUpdateState;
-@modrinth/app:dev:   [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `UpdateStateKey` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_update_state.rs:12:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m12[0m [1m[96m|[0m pub(crate) struct UpdateStateKey {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: enum `UpdateStateRecord` is never used[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_update_state.rs:21:17
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m21[0m [1m[96m|[0m pub(crate) enum UpdateStateRecord {
-@modrinth/app:dev:    [1m[96m|[0m                 [1m[93m^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `columns` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_update_state.rs:150:4
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m150[0m [1m[96m|[0m fn columns(
-@modrinth/app:dev:     [1m[96m|[0m    [1m[93m^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `to_record` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\game_option_update_state.rs:164:4
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m164[0m [1m[96m|[0m fn to_record(
-@modrinth/app:dev:     [1m[96m|[0m    [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: associated function `instances_with_feature_enabled` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\instance_sync_preferences.rs:153:25
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m151[0m [1m[96m|[0m impl InstanceSyncPreferences {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m----------------------------[0m [1m[96massociated function in this implementation[0m
-@modrinth/app:dev: [1m[96m152[0m [1m[96m|[0m     /// The instances that take part in `feature`.
-@modrinth/app:dev: [1m[96m153[0m [1m[96m|[0m     pub(crate) async fn instances_with_feature_enabled(
-@modrinth/app:dev:     [1m[96m|[0m                         [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `JavaDefaultVersions` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\java_default_versions.rs:11:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m11[0m [1m[96m|[0m pub(crate) struct JavaDefaultVersions;
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `write_row` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\java_default_versions.rs:124:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m124[0m [1m[96m|[0m async fn write_row(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `delete_omitted` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\java_default_versions.rs:147:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m147[0m [1m[96m|[0m async fn delete_omitted(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `JavaVersions` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\java_versions.rs:11:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m11[0m [1m[96m|[0m pub(crate) struct JavaVersions;
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `write_row` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\java_versions.rs:161:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m161[0m [1m[96m|[0m async fn write_row(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `delete_omitted` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\java_versions.rs:191:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m191[0m [1m[96m|[0m async fn delete_omitted(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `ensure_records_are_in_scope` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\java_versions.rs:227:4
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m227[0m [1m[96m|[0m fn ensure_records_are_in_scope(
-@modrinth/app:dev:     [1m[96m|[0m    [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `ensure_keys_belong_to_scope` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\java_versions.rs:246:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m246[0m [1m[96m|[0m async fn ensure_keys_belong_to_scope(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `OfficialLoginProof` is never constructed[0m
-@modrinth/app:dev:  [1m[96m--> [0mpackages\app-lib\src\state\store\official_login_proof.rs:8:19
-@modrinth/app:dev:   [1m[96m|[0m
-@modrinth/app:dev: [1m[96m8[0m [1m[96m|[0m pub(crate) struct OfficialLoginProof;
-@modrinth/app:dev:   [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `Installation` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\official_login_proof.rs:12:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m12[0m [1m[96m|[0m pub(crate) struct Installation;
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: struct `OfficialLoginProofRecord` is never constructed[0m
-@modrinth/app:dev:   [1m[96m--> [0mpackages\app-lib\src\state\store\official_login_proof.rs:16:19
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m16[0m [1m[96m|[0m pub(crate) struct OfficialLoginProofRecord {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[93m^^^^^^^^^^^^^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: function `write_row` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\official_login_proof.rs:104:10
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m104[0m [1m[96m|[0m async fn write_row(
-@modrinth/app:dev:     [1m[96m|[0m          [1m[93m^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: associated function `position_for` is never used[0m
-@modrinth/app:dev:    [1m[96m--> [0mpackages\app-lib\src\state\store\synced_servers.rs:123:25
-@modrinth/app:dev:     [1m[96m|[0m
-@modrinth/app:dev: [1m[96m121[0m [1m[96m|[0m impl SyncedServers {
-@modrinth/app:dev:     [1m[96m|[0m [1m[96m------------------[0m [1m[96massociated function in this implementation[0m
-@modrinth/app:dev: [1m[96m122[0m [1m[96m|[0m     /// Where `id` sits, or the position a server appended to the list takes.
-@modrinth/app:dev: [1m[96m123[0m [1m[96m|[0m     pub(crate) async fn position_for(
-@modrinth/app:dev:     [1m[96m|[0m                         [1m[93m^^^^^^^^^^^^[0m
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 883/885: theseus @modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m: `theseus` (lib) generated 151 warnings (run `cargo fix --lib -p theseus` to apply 1 suggestion)
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 884/885: theseus…@modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: unused import: `CacheBehaviour`[0m
-@modrinth/app:dev:   [1m[96m--> [0mapps\app\src\api\curseforge.rs:10:24
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m10[0m [1m[96m|[0m use theseus::prelude::{CacheBehaviour, State};
-@modrinth/app:dev:    [1m[96m|[0m                        [1m[93m^^^^^^^^^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 884/885: theseus…@modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: unused variable: `context`[0m
-@modrinth/app:dev:   [1m[96m--> [0mapps\app\src\api\tools\backend\launcher_system.rs:85:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m85[0m [1m[96m|[0m     context: BackendContext,
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^^[0m [1m[93mhelp: if this is intentional, prefix it with an underscore: `_context`[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 884/885: theseus…@modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m[1m[97m: field `updates` is never read[0m
-@modrinth/app:dev:   [1m[96m--> [0mapps\app\src\api\tools\backend\mod.rs:55:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m42[0m [1m[96m|[0m pub(super) struct LauncherBackend {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[96m---------------[0m [1m[96mfield in this struct[0m
-@modrinth/app:dev: [1m[96m...[0m
-@modrinth/app:dev: [1m[96m55[0m [1m[96m|[0m     updates: ScopedRegistry<launcher_system::UpdateHandle>,
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[93mwarning[0m[1m[97m: fields `rid` and `version` are never read[0m
-@modrinth/app:dev:   [1m[96m--> [0mapps\app\src\api\tools\backend\launcher_system.rs:11:5
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev: [1m[96m10[0m [1m[96m|[0m pub(super) struct UpdateHandle {
-@modrinth/app:dev:    [1m[96m|[0m                   [1m[96m------------[0m [1m[96mfields in this struct[0m
-@modrinth/app:dev: [1m[96m11[0m [1m[96m|[0m     rid: u32,
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^[0m
-@modrinth/app:dev: [1m[96m12[0m [1m[96m|[0m     version: String,
-@modrinth/app:dev:    [1m[96m|[0m     [1m[93m^^^^^^^[0m
-@modrinth/app:dev:    [1m[96m|[0m
-@modrinth/app:dev:    [1m[96m= [0m[1m[97mnote[0m: `UpdateHandle` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
-@modrinth/app:dev: 
-@modrinth/app:dev: [1m[96m    Building[0m [=======================> ] 884/885: theseus…@modrinth/app:dev:                                                             @modrinth/app:dev: [1m[93mwarning[0m: `theseus_gui` (bin "theseus_gui") generated 4 warnings (run `cargo fix --bin "theseus_gui" -p theseus_gui` to apply 2 suggestions)
-@modrinth/app:dev: [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 4m 57s
-@modrinth/app:dev: [1m[92m     Running[0m `C:\Users\LOU0122\endpaper-ax\target\debug\theseus_gui.exe`
-@modrinth/app:dev: [2m2026-11-01T11:55:33.106019Z[0m [32m INFO[0m [2mtheseus_gui[0m[2m:[0m Initialized tracing subscriber. Loading Axolotl Launcher!
-@modrinth/app:dev: [2m2026-11-01T11:55:33.106721Z[0m [32m INFO[0m [2mtheseus_gui[0m[2m:[0m Initializing app...
-@modrinth/app:dev: [2m19:55:35[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
-@modrinth/app:dev: [2m19:55:37[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./AxolotlLogo.vue" from "src/components/ui/AppTitlebar.vue". Does the file exist?
-@modrinth/app:dev:   Plugin: [35mvite:import-analysis[39m
-@modrinth/app:dev:   File: [36mC:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue[39m:8:25
-@modrinth/app:dev: [33m  18 |  import { useRouter } from "vue-router";
-@modrinth/app:dev:   19 |  import McpConnectionStatus from "@/features/mcp/McpConnectionStatus.vue";
-@modrinth/app:dev:   20 |  import EndpaperLogo from "./AxolotlLogo.vue";
-@modrinth/app:dev:      |                            ^
-@modrinth/app:dev:   21 |  import Breadcrumbs from "./Breadcrumbs.vue";
-@modrinth/app:dev:   22 |  const _sfc_main = /*@__PURE__*/ _defineComponent({[39m
-@modrinth/app:dev: [2m19:55:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mdependencies optimized: [33m@floating-ui/vue, @sfirew/minecraft-motd-parser, @tanstack/vue-query, @tauri-apps/api/app, @tauri-apps/api/core, @tauri-apps/api/event, @tauri-apps/api/path, @tauri-apps/api/webview, @tauri-apps/api/window, @tauri-apps/plugin-dialog, @tauri-apps/plugin-fs, @tauri-apps/plugin-http, @tauri-apps/plugin-opener, @tauri-apps/plugin-os, @tauri-apps/plugin-window-state, dayjs, highlight.js/lib/core, highlight.js/lib/languages/gradle, highlight.js/lib/languages/groovy, highlight.js/lib/languages/ini, highlight.js/lib/languages/java, highlight.js/lib/languages/javascript, highlight.js/lib/languages/json, highlight.js/lib/languages/kotlin, highlight.js/lib/languages/lua, highlight.js/lib/languages/properties, highlight.js/lib/languages/python, highlight.js/lib/languages/scala, highlight.js/lib/languages/xml, highlight.js/lib/languages/yaml, highlightjs-mcfunction, mitt, ofetch, overlayscrollbars, pinia, vue-i18n, vue-router, vue[32m[39m
-@modrinth/app:dev: [2m19:55:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32moptimized dependencies changed. reloading[39m
-@modrinth/app:dev: [2m19:55:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
-@modrinth/app:dev: [2m19:55:46[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./AxolotlLogo.vue" from "src/components/ui/AppTitlebar.vue". Does the file exist?[39m
-@modrinth/app:dev:   Plugin: [35mvite:import-analysis[39m
-@modrinth/app:dev:   File: [36mC:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue[39m:8:25
-@modrinth/app:dev: [33m  18 |  import { useRouter } from "vue-router";
-@modrinth/app:dev:   19 |  import McpConnectionStatus from "@/features/mcp/McpConnectionStatus.vue";
-@modrinth/app:dev:   20 |  import EndpaperLogo from "./AxolotlLogo.vue";
-@modrinth/app:dev:      |                            ^
-@modrinth/app:dev:   21 |  import Breadcrumbs from "./Breadcrumbs.vue";
-@modrinth/app:dev:   22 |  const _sfc_main = /*@__PURE__*/ _defineComponent({[39m
-@modrinth/app:dev:       at TransformPluginContext._formatLog (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31317:39)
-@modrinth/app:dev:       at TransformPluginContext.error (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31314:14)
-@modrinth/app:dev:       at normalizeUrl (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:28253:18)
-@modrinth/app:dev:       at async file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:28323:30
-@modrinth/app:dev:       at async Promise.all (index 6)
-@modrinth/app:dev:       at async TransformPluginContext.transform (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:28289:4)
-@modrinth/app:dev:       at async file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite-plugin-inspect@11.4.1__06396f74cb9e7d07f8d59f71f75a7453/node_modules/vite-plugin-inspect/dist/shared/vite-plugin-inspect.Fv_Ybe1U.mjs:403:17
-@modrinth/app:dev:       at async EnvironmentPluginContainer.transform (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31102:14)
-@modrinth/app:dev:       at async loadAndTransform (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:20837:26)
-@modrinth/app:dev:       at async viteTransformMiddleware (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:25372:20)
-@modrinth/app:dev: [2m19:55:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
-@modrinth/app:dev: [2m19:55:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mdependencies optimized: [33m@vueuse/core, es-toolkit, fabric, flatpickr, fuse.js, fuse.js/dist/fuse.basic, html-to-image, intl-messageformat, lru-cache, markdown-it, qrcode.vue, reka-ui, xss[32m[39m
-@modrinth/app:dev: [2m19:55:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32moptimized dependencies changed. reloading[39m
-@modrinth/app:dev: [2m19:55:55[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./AxolotlLogo.vue" from "src/components/ui/AppTitlebar.vue". Does the file exist?
-@modrinth/app:dev:   Plugin: [35mvite:import-analysis[39m
-@modrinth/app:dev:   File: [36mC:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue[39m:8:25
-@modrinth/app:dev: [33m  18 |  import { useRouter } from "vue-router";
-@modrinth/app:dev:   19 |  import McpConnectionStatus from "@/features/mcp/McpConnectionStatus.vue";
-@modrinth/app:dev:   20 |  import EndpaperLogo from "./AxolotlLogo.vue";
-@modrinth/app:dev:      |                            ^
-@modrinth/app:dev:   21 |  import Breadcrumbs from "./Breadcrumbs.vue";
-@modrinth/app:dev:   22 |  const _sfc_main = /*@__PURE__*/ _defineComponent({[39m
-@modrinth/app:dev: [2m19:55:56[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./AxolotlLogo.vue" from "src/components/ui/AppTitlebar.vue". Does the file exist?[39m
-@modrinth/app:dev:   Plugin: [35mvite:import-analysis[39m
-@modrinth/app:dev:   File: [36mC:/Users/LOU0122/endpaper-ax/apps/app-frontend/src/components/ui/AppTitlebar.vue[39m:8:25
-@modrinth/app:dev: [33m  18 |  import { useRouter } from "vue-router";
-@modrinth/app:dev:   19 |  import McpConnectionStatus from "@/features/mcp/McpConnectionStatus.vue";
-@modrinth/app:dev:   20 |  import EndpaperLogo from "./AxolotlLogo.vue";
-@modrinth/app:dev:      |                            ^
-@modrinth/app:dev:   21 |  import Breadcrumbs from "./Breadcrumbs.vue";
-@modrinth/app:dev:   22 |  const _sfc_main = /*@__PURE__*/ _defineComponent({[39m
-@modrinth/app:dev:       at TransformPluginContext._formatLog (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31317:39)
-@modrinth/app:dev:       at TransformPluginContext.error (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31314:14)
-@modrinth/app:dev:       at normalizeUrl (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:28253:18)
-@modrinth/app:dev:       at async file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:28323:30
-@modrinth/app:dev:       at async Promise.all (index 6)
-@modrinth/app:dev:       at async TransformPluginContext.transform (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:28289:4)
-@modrinth/app:dev:       at async file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite-plugin-inspect@11.4.1__06396f74cb9e7d07f8d59f71f75a7453/node_modules/vite-plugin-inspect/dist/shared/vite-plugin-inspect.Fv_Ybe1U.mjs:403:17
-@modrinth/app:dev:       at async EnvironmentPluginContainer.transform (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:31102:14)
-@modrinth/app:dev:       at async loadAndTransform (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:20837:26)
-@modrinth/app:dev:       at async viteTransformMiddleware (file:///C:/Users/LOU0122/endpaper-ax/node_modules/.pnpm/vite@8.2.4_@types+node@24.1_7a2070c9b8cb1ff4e65c3c0388a4c93e/node_modules/vite/dist/node/chunks/node.js:25372:20)
-@modrinth/app:dev: [2m2026-11-01T11:56:33.568175Z[0m [31mERROR[0m [1mget[0m[2m:[0m [2mtheseus::state[0m[2m:[0m Launcher state was still not initialized after 60s; refusing to wait any longer
-@modrinth/app:dev: [2m2026-11-01T11:57:33.658393Z[0m [31mERROR[0m [1mlist[0m[2m:[0m [2mtheseus::state[0m[2m:[0m Launcher state was still not initialized after 60s; refusing to wait any longer
-@modrinth/app:dev: [1m[91merror[0m: process didn't exit successfully: `C:\Users\LOU0122\endpaper-ax\target\debug\theseus_gui.exe` (exit code: 0xffffffff)
-@modrinth/app:dev:  ELIFECYCLE  Command failed with exit code 4294967295.
-@modrinth/app#dev:  ERROR  command (C:\Users\LOU0122\endpaper-ax\apps\app) C:\Users\LOU0122\AppData\Local\hermes\node\pnpm.cmd run dev exited (-1)
-
- Tasks:    0 successful, 1 total
-Cached:    0 cached, 1 total
-  Time:    11m27.364s 
-Failed:    @modrinth/app#dev
-
- ERROR  run failed: command  exited (-1)
- ELIFECYCLE  Command failed with exit code 4294967295.

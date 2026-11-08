@@ -143,4 +143,8 @@ apps/app/resources/seed-map/
 
 # 本地构建产物
 build.log
-release.log
+release*.log
+dev*.log
+# 临时下载的源码归档，不进版本库
+*.tgz
+
