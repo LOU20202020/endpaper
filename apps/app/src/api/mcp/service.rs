@@ -53,11 +53,9 @@ impl Controller {
         self.revision_base = next_generation();
         let revision_base = self.revision_base;
         let token = if self.preferences.require_auth {
-            let credential = keyring::Entry::new(
-                "Endpaper MCP",
-                &app.config().identifier,
-            )
-            .map_err(|error| error.to_string())?;
+            let credential =
+                keyring::Entry::new("Endpaper MCP", &app.config().identifier)
+                    .map_err(|error| error.to_string())?;
             let token = match credential.get_password() {
                 Ok(token) => token,
                 Err(keyring::Error::NoEntry) => {

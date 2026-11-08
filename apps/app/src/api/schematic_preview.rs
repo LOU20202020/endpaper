@@ -1698,11 +1698,7 @@ fn export_litematic(session: &PreviewSession) -> Result<Vec<u8>, String> {
     );
     metadata.insert(
         "Author",
-        session
-            .manifest
-            .author
-            .as_deref()
-            .unwrap_or("Endpaper"),
+        session.manifest.author.as_deref().unwrap_or("Endpaper"),
     );
     metadata.insert(
         "Description",
