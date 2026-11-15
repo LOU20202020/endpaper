@@ -17,7 +17,6 @@ on:
           - github
           - update-server
           - website
-          - cnb
           - gitlink
           - aliyunoss
           - discord
@@ -36,6 +35,11 @@ concurrency:
 env:
   RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
 
+# Optional publication targets are off unless the matching repository variable is
+# set to 'true'; each one needs credentials this fork does not have
+# (ENDpaper keeps releases on GitHub only):
+#   ENABLE_UPDATE_SERVER_PUBLISH, ENABLE_WEBSITE_PUBLISH,
+#   ENABLE_ALIYUNOSS_MIRROR, ENABLE_GITLINK_MIRROR
 jobs:
   preflight:
     name: Release preflight
@@ -304,8 +308,8 @@ jobs:
           MANUAL_REF: ${{ github.ref }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [[ "$EVENT_NAME" == workflow_dispatch && "$MANUAL_REF" != refs/heads/main ]]; then
-            echo '::error::Resume releases from main so publication uses the current scripts.'
+          if [[ "$EVENT_NAME" == workflow_dispatch && "$MANUAL_REF" != refs/heads/master ]]; then
+            echo '::error::Resume releases from the default branch so publication uses the current scripts.'
             exit 1
           fi
           node --input-type=module -e 'import { releaseVersion } from "./scripts/axolotl/release-utils.mjs"; releaseVersion(process.env.RELEASE_TAG)'
@@ -355,7 +359,7 @@ jobs:
     name: Notify Update Server
     needs: verify-and-publish
     timeout-minutes: 45
-    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'update-server') }}
+    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'update-server') && vars.ENABLE_UPDATE_SERVER_PUBLISH == 'true' }}
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
@@ -385,7 +389,7 @@ jobs:
   publish-website:
     name: Build and deploy website to Cloudflare Pages
     needs: verify-and-publish
-    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'website') }}
+    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'website') && vars.ENABLE_WEBSITE_PUBLISH == 'true' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     concurrency:
@@ -419,7 +423,7 @@ jobs:
       - name: Checkout website publication branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: main
+          ref: ${{ github.event.repository.default_branch }}
           path: website-publish
       - name: Setup pnpm
         uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
@@ -470,7 +474,7 @@ jobs:
             echo "Website release data is unchanged"
           else
             git -C website-publish commit -m "chore(website): update release data for ${RELEASE_TAG} [skip ci]"
-            git -C website-publish push origin main
+            git -C website-publish push origin "HEAD:${{ github.event.repository.default_branch }}"
           fi
       - name: Deploy prebuilt website to Cloudflare Pages
         working-directory: website-publish
@@ -483,59 +487,10 @@ jobs:
             --branch main \
             --commit-message "Launcher ${RELEASE_TAG} (GitHub Actions ${GITHUB_RUN_ID})"
 
-  mirror-cnb:
-    name: Mirror release to CNB
-    needs: verify-and-publish
-    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'cnb') }}
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: ${{ github.sha }}
-      - name: Setup Node.js
-        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version-file: .nvmrc
-      - name: Download published release metadata
-        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
-        with:
-          name: published-release-metadata
-          path: release-check
-      - name: Mirror published release to CNB
-        env:
-          CNB_REPO_URL_HTTPS: ${{ secrets.CNB_REPO_URL_HTTPS }}
-          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
-          CNB_TOKEN_USER_NAME: ${{ secrets.CNB_TOKEN_USER_NAME }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_SHA: ${{ needs.verify-and-publish.outputs.release-sha }}
-        run: |
-          set -euo pipefail
-          if [[ -z "${CNB_TOKEN:-}" ]]; then
-            echo "CNB_TOKEN is not configured"
-            exit 1
-          fi
-
-          cnb_url="${CNB_REPO_URL_HTTPS:-https://cnb.cool/axlmc/Axolotl.git}"
-          token_user="${CNB_TOKEN_USER_NAME:-cnb}"
-          auth="$(printf '%s:%s' "$token_user" "$CNB_TOKEN" | base64 -w0)"
-          git_cnb() {
-            git -c "http.extraHeader=Authorization: Basic $auth" "$@"
-          }
-
-          git fetch origin "refs/tags/${RELEASE_TAG}:refs/tags/${RELEASE_TAG}"
-          test "$(git rev-parse "refs/tags/${RELEASE_TAG}^{commit}")" = "$RELEASE_SHA"
-          git_cnb push --force "$cnb_url" \
-            "refs/tags/${RELEASE_TAG}:refs/tags/${RELEASE_TAG}"
-
-          node scripts/axolotl/cnb-release.mjs finalize "${RELEASE_TAG}" cnb-release/final
-          node scripts/axolotl/verify-update-manifest.mjs \
-            cnb-release/final/latest.json "${RELEASE_TAG}" cnb
-
   mirror-aliyunoss:
     name: Mirror release to Aliyun OSS
     needs: verify-and-publish
-    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'aliyunoss') }}
+    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'aliyunoss') && vars.ENABLE_ALIYUNOSS_MIRROR == 'true' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     permissions:
@@ -575,7 +530,7 @@ jobs:
   mirror-gitlink:
     name: Mirror release to GitLink
     needs: verify-and-publish
-    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'gitlink') }}
+    if: ${{ !cancelled() && needs.verify-and-publish.result == 'success' && (github.event_name == 'push' || inputs.target == 'all' || inputs.target == 'gitlink') && vars.ENABLE_GITLINK_MIRROR == 'true' }}
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
