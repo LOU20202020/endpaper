@@ -4962,8 +4962,7 @@ export const launcherAnnouncements: readonly LauncherAnnouncement[] = [
         changes: {
             added: [
                 {
-                    'en-US':
-                        'Launcher will now show a discord rich presence binded to Endpaper.',
+                    'en-US': 'Launcher will now show a discord rich presence binded to Endpaper.',
                     'zh-CN': '启动器现在会显示 Endpaper 的 Discord Rich Presence。',
                 },
                 {

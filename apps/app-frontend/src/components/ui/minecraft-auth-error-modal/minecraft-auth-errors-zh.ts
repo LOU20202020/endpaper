@@ -44,7 +44,8 @@ const translations: Record<string, string> = {
     'Try signing in to Endpaper Launcher again': '再次尝试登录 Endpaper Launcher',
     'Endpaper Launcher could not connect to a Microsoft, Xbox, or Minecraft service needed for sign-in. This is usually caused by a local network, DNS, proxy, firewall, hosts file, VPN, or antivirus issue.':
         'Endpaper Launcher 无法连接登录所需的 Microsoft、Xbox 或 Minecraft 服务。通常是本地网络、DNS、代理、防火墙、hosts 文件、VPN 或杀毒软件导致的。',
-    'Restart Endpaper Launcher and try signing in again': '重启 Endpaper Launcher，然后再次尝试登录',
+    'Restart Endpaper Launcher and try signing in again':
+        '重启 Endpaper Launcher，然后再次尝试登录',
     'Check that your internet connection is working': '检查网络连接是否正常',
     'Allow Endpaper Launcher through your firewall, antivirus, proxy, VPN, and hosts file rules':
         '在防火墙、杀毒软件、代理、VPN 和 hosts 文件规则中允许 Endpaper Launcher 通行',

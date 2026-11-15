@@ -5,8 +5,8 @@ import { useRouter } from 'vue-router'
 
 import McpConnectionStatus from '@/features/mcp/McpConnectionStatus.vue'
 
-import EndpaperLogo from './EndpaperLogo.vue'
 import Breadcrumbs from './Breadcrumbs.vue'
+import EndpaperLogo from './EndpaperLogo.vue'
 
 defineProps<{
     isBetaBuild?: boolean

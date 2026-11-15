@@ -4,7 +4,6 @@ import mascotVisual from '@/assets/endpaper-book.svg?url'
 defineProps<{
     alt: string
 }>()
-
 </script>
 
 <template>

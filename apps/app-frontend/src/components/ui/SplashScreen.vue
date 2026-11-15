@@ -8,7 +8,9 @@
             <svg class="clip-defs" width="0" height="0" aria-hidden="true">
                 <defs>
                     <clipPath id="epBookClip" clipPathUnits="objectBoundingBox">
-                        <path d="M0.012 0.048 Q0.012 0.006 0.052 0.010 L0.5 0.078 L0.948 0.010 Q0.988 0.006 0.988 0.048 L0.988 0.922 Q0.988 0.966 0.948 0.958 L0.5 0.998 L0.052 0.958 Q0.012 0.966 0.012 0.922 Z" />
+                        <path
+                            d="M0.012 0.048 Q0.012 0.006 0.052 0.010 L0.5 0.078 L0.948 0.010 Q0.988 0.006 0.988 0.048 L0.988 0.922 Q0.988 0.966 0.948 0.958 L0.5 0.998 L0.052 0.958 Q0.012 0.966 0.012 0.922 Z"
+                        />
                     </clipPath>
                 </defs>
             </svg>
@@ -28,12 +30,7 @@
                 <div class="page page-left"></div>
                 <div class="page page-right">
                     <div class="creeper">
-                        <i
-                            v-for="c in creeperCells"
-                            :key="c.k"
-                            class="px"
-                            :style="c.style"
-                        ></i>
+                        <i v-for="c in creeperCells" :key="c.k" class="px" :style="c.style"></i>
                     </div>
                 </div>
                 <div class="gutter"></div>
@@ -42,7 +39,12 @@
                 <div class="cover">
                     <div class="face face-front">
                         <div class="emboss">
-                            <i v-for="c in creeperCells" :key="c.k" class="epx" :style="c.style"></i>
+                            <i
+                                v-for="c in creeperCells"
+                                :key="c.k"
+                                class="epx"
+                                :style="c.style"
+                            ></i>
                         </div>
                         <div class="title">
                             <span class="title-main">EndPaper</span>
@@ -56,7 +58,12 @@
             <!-- 黄条：先是夹在书里的书签，之后加宽成左侧导航栏（放在书外面，避免被 3D 封面的层级压住） -->
             <div class="rail">
                 <div class="rail-grip"></div>
-                <i v-for="n in 6" :key="n" class="nav-dot" :style="{ transitionDelay: `${(n - 1) * 55}ms` }"></i>
+                <i
+                    v-for="n in 6"
+                    :key="n"
+                    class="nav-dot"
+                    :style="{ transitionDelay: `${(n - 1) * 55}ms` }"
+                ></i>
             </div>
 
             <div v-if="slow" class="slow-hint">加载中…</div>
@@ -254,8 +261,7 @@ $shadow: 0 2.4rem 5rem rgba(6, 12, 24, 0.45);
 .paper-fill {
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(circle at 50% 40%, #fbf6e7 0%, $paper 55%, #efe6cd 100%);
+    background: radial-gradient(circle at 50% 40%, #fbf6e7 0%, $paper 55%, #efe6cd 100%);
     opacity: 0;
     transition: opacity 0.42s ease;
 }
@@ -285,8 +291,7 @@ $shadow: 0 2.4rem 5rem rgba(6, 12, 24, 0.45);
 .spread-pages {
     position: absolute;
     inset: 6.2% 2% 7.6% 2.6%;
-    background:
-        radial-gradient(circle at 46% 38%, #fbf6e7 0%, $paper 60%, #f0e7cf 100%);
+    background: radial-gradient(circle at 46% 38%, #fbf6e7 0%, $paper 60%, #f0e7cf 100%);
     border-radius: 0.45rem;
     overflow: hidden;
     box-shadow: inset 0 0 2.4rem -1rem rgba(120, 96, 60, 0.35);
@@ -350,7 +355,6 @@ $shadow: 0 2.4rem 5rem rgba(6, 12, 24, 0.45);
     filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
 }
 
-
 /* 书的底板：翻开过程中封面转到 90° 是零宽度，这一层保证任何角度都不漏白 */
 .book::before {
     content: '';
@@ -366,8 +370,12 @@ $shadow: 0 2.4rem 5rem rgba(6, 12, 24, 0.45);
     position: absolute;
     top: 0;
     bottom: 0;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.02) 40%, rgba(0, 0, 0, 0.05));
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(0, 0, 0, 0.02) 40%,
+        rgba(0, 0, 0, 0.05)
+    );
     background-color: $paper;
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -578,8 +586,7 @@ $shadow: 0 2.4rem 5rem rgba(6, 12, 24, 0.45);
 }
 
 .face-front {
-    background:
-        linear-gradient(155deg, #22345a 0%, $ink 42%, #101a2e 100%);
+    background: linear-gradient(155deg, #22345a 0%, $ink 42%, #101a2e 100%);
     box-shadow:
         inset 0 0 0 1px rgba(246, 240, 221, 0.35),
         inset 0.9rem 0 1.6rem -0.6rem rgba(0, 0, 0, 0.55);
@@ -619,7 +626,12 @@ $shadow: 0 2.4rem 5rem rgba(6, 12, 24, 0.45);
 .face-back {
     transform: rotateY(180deg);
     background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(0, 0, 0, 0.03) 45%, rgba(0, 0, 0, 0.06)),
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.55),
+            rgba(0, 0, 0, 0.03) 45%,
+            rgba(0, 0, 0, 0.06)
+        ),
         $paper;
     border-radius: 0.9rem 0 0 0.9rem;
     box-shadow: inset 0 0 0 1px rgba(120, 96, 60, 0.18);
