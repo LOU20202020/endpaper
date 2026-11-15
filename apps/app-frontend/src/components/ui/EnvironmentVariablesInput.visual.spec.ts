@@ -91,6 +91,17 @@ vi.mock('@modrinth/ui', async () => {
                             emit('update:modelValue', (event.target as HTMLInputElement).value),
                     }),
         }),
+        Button: defineComponent({
+            props: ['type', 'disabled'],
+            setup:
+                (props, { slots }) =>
+                () =>
+                    h(
+                        'button',
+                        { type: props.type ?? 'button', disabled: props.disabled },
+                        slots.default?.(),
+                    ),
+        }),
         defineMessage: (message: unknown) => message,
         defineMessages: (messages: unknown) => messages,
         injectNotificationManager: () => ({ handleError: vi.fn() }),

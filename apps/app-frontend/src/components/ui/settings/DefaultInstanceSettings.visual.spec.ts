@@ -9,7 +9,8 @@ const backend = vi.hoisted(() => ({
     patches: [] as Record<string, unknown>[],
 }))
 
-vi.mock('@/helpers/settings.ts', () => ({
+vi.mock('@/helpers/settings.ts', async (importOriginal) => ({
+    ...(await importOriginal<typeof import('@/helpers/settings.ts')>()),
     get: async () => structuredClone(backend.settings),
     update: async (patch: Record<string, unknown>) => {
         backend.patches.push(patch)
@@ -96,6 +97,17 @@ vi.mock('@modrinth/ui', async () => {
                         },
                     })
             },
+        }),
+        Button: defineComponent({
+            props: ['type', 'disabled'],
+            setup:
+                (props, { slots }) =>
+                () =>
+                    h(
+                        'button',
+                        { type: props.type ?? 'button', disabled: props.disabled },
+                        slots.default?.(),
+                    ),
         }),
         defineMessages: (messages: unknown) => messages,
         injectNotificationManager: () => ({ handleError: vi.fn() }),
