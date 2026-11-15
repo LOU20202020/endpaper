@@ -10,6 +10,9 @@ extend-exclude = [
   "apps/app-frontend/src/data/about/contributors.json",
   # Vendored upstream submodule, not checked out by CI.
   "apps/app/vendor/",
+  # Vendored Blockbench copy used by the resource-pack editor: upstream text,
+  # not ours to spell-check.
+  "third-party/blockbench/",
   # Generated mod search index contains project slugs, names, and compressed data.
   "packages/app-lib/src/api/content_search/WikiEntries.txt",
   # Bundled Monaco editor runtime contains upstream generated assets.
