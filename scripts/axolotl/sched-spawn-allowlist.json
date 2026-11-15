@@ -414,12 +414,13 @@
     {
       "file": "apps/app/src/main.rs",
       "form": "std::fs",
-      "count": 3,
-      "reason": "phase-0 baseline: synchronous file I/O; must not appear in L0 or inside a critical section (D17)",
+      "count": 4,
+      "reason": "phase-0 baseline: synchronous file I/O; must not appear in L0 or inside a critical section (D17) Endpaper fork adds one diagnostic OpenOptions write in main (window-frame probe logging); it leaves with that probe.",
       "sites": [
         "write_update_channel_state: std::fs::create_dir_all(&settings_dir)?;",
         "write_update_channel_state: std::fs::rename(temporary_path, path)?;",
-        "write_update_channel_state: std::fs::write(&temporary_path, contents)?;"
+        "write_update_channel_state: std::fs::write(&temporary_path, contents)?;",
+        "main: std::fs::OpenOptions::new()"
       ]
     },
     {
@@ -434,13 +435,14 @@
     {
       "file": "apps/app/src/main.rs",
       "form": "tauri::async_runtime::spawn",
-      "count": 8,
-      "reason": "phase-0 baseline: existing Tauri runtime spawn; moves to scheduler dispatch with the governed items (spec §5.6) or stays operation-scoped",
+      "count": 9,
+      "reason": "phase-0 baseline: existing Tauri runtime spawn; moves to scheduler dispatch with the governed items (spec §5.6) or stays operation-scoped Endpaper fork adds the anti-piracy region check spawn in main.",
       "sites": [
         "initialize_state: tauri::async_runtime::spawn(async move {",
         "initialize_state: tauri::async_runtime::spawn(async {",
         "main: tauri::async_runtime::spawn(api::utils::handle_command(",
         "main: tauri::async_runtime::spawn(api::utils::handle_command(",
+        "main: tauri::async_runtime::spawn(async move {",
         "main: tauri::async_runtime::spawn(async move {",
         "main: tauri::async_runtime::spawn(async move {",
         "main: tauri::async_runtime::spawn(async move {",
