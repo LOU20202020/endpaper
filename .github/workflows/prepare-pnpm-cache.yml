@@ -3,7 +3,7 @@ name: Prepare pnpm caches
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - .github/workflows/prepare-pnpm-cache.yml
       - package.json
@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   prepare:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     strategy:
       fail-fast: false
       matrix:

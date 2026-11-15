@@ -9,7 +9,7 @@ permissions:
 jobs:
   deploy:
     name: Build and deploy website
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     concurrency:

@@ -3,7 +3,7 @@ name: Update nix flake
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - flake.nix
       - flake.lock

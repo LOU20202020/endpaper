@@ -2,7 +2,7 @@ name: Axolotl desktop CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths-ignore:
       - 'apps/telemetry-worker/**'
   pull_request:
@@ -239,7 +239,7 @@ jobs:
         uses: ./.github/actions/setup-desktop-build
         with:
           profile: ci
-          save-cache: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+          save-cache: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       - name: Set frontend target for reusable build
         shell: bash
         run: |

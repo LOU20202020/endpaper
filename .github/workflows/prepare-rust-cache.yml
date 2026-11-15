@@ -3,7 +3,7 @@ name: Prepare desktop release caches
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - '**/Cargo.toml'
       - Cargo.lock
@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   dependencies:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     strategy:
       fail-fast: false
       matrix:
