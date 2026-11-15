@@ -12,6 +12,14 @@
 # permanently dirty.
 RUST_MIN_STACK = "67108864"
 
+[target.'cfg(all(windows, target_env = "gnu"))']
+rustflags = ["-C", "link-args=-Wl,--stack,16777220"]
+
+# Windows has stack overflows when calling from Tauri, so we increase the default stack size used by the compiler.
+# GNU 的 ld 不认 /STACK，换等价的 -Wl,--stack（同一个数值），否则链接阶段直接失败。
+[target.'cfg(all(windows, target_env = "msvc"))']
+rustflags = ["-C", "link-args=/STACK:16777220"]
+
 # Linux builds link with mold (https://github.com/rui314/mold), which has to be
 # on PATH as ld.mold. It only writes ELF, so Windows keeps rust-lld below and
 # macOS keeps the system linker. GCC 12.1+ and Clang both accept -fuse-ld=mold,
@@ -20,14 +28,6 @@ RUST_MIN_STACK = "67108864"
 # that table to this file; a second definition would be a TOML error.
 [target.'cfg(target_os = "linux")']
 rustflags = ["-C", "link-arg=-fuse-ld=mold"]
-
-# Windows has stack overflows when calling from Tauri, so we increase the default stack size used by the compiler.
-# GNU 的 ld 不认 /STACK，换等价的 -Wl,--stack（同一个数值），否则链接阶段直接失败。
-[target.'cfg(all(windows, target_env = "msvc"))']
-rustflags = ["-C", "link-args=/STACK:16777220"]
-
-[target.'cfg(all(windows, target_env = "gnu"))']
-rustflags = ["-C", "link-args=-Wl,--stack,16777220"]
 
 [target.x86_64-pc-windows-msvc]
 linker = "rust-lld"
