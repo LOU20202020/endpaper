@@ -7,6 +7,12 @@ const migrationsDirectories = ['packages/app-lib/migrations', 'packages/app-lib/
 // The backup SQL before f404e464 formatted already-applied migrations.
 const canonicalBackupRef = 'b505dd9e1e98da845d84af28c5a79036e107493c'
 const repository = githubRepository()
+// This fork carries Endpaper's own history, so the canonical snapshots below are
+// not part of it. They are imported on demand from upstream; when that fails the
+// guard reports the gap and skips only the checks that need them.
+const canonicalUpstreamRepository =
+    process.env.MIGRATION_GUARD_UPSTREAM ?? 'https://github.com/Axolotl-Launcher/Axolotl.git'
+const canonicalAvailability = new Map()
 // v1.7.5 is the canonical snapshot immediately before the v1.7.6 incident.
 const canonicalBootstrap = {
     ref: '7ddbfb8e57db4b0044a04cf28f25fb29e08c3279',
@@ -27,6 +33,40 @@ function git(args, encoding = 'utf8') {
         maxBuffer: 16 * 1024 * 1024,
         stdio: ['ignore', 'pipe', 'pipe'],
     })
+}
+
+function hasCommit(ref) {
+    try {
+        git(['rev-parse', '--verify', `${ref}^{commit}`])
+        return true
+    } catch {
+        return false
+    }
+}
+
+function canonicalAvailable(ref, label, alternates = []) {
+    if (canonicalAvailability.has(ref)) return canonicalAvailability.get(ref)
+
+    let available = hasCommit(ref)
+    for (const candidate of [ref, ...alternates]) {
+        if (available) break
+        try {
+            git(['fetch', '--no-tags', '--depth=1', canonicalUpstreamRepository, candidate])
+            available = hasCommit(ref)
+        } catch {
+            available = false
+        }
+    }
+
+    if (!available) {
+        console.warn(
+            `Migration guard notice: canonical ${label} snapshot ${ref} is unavailable ` +
+                `(could not fetch it from ${canonicalUpstreamRepository}); skipping the ` +
+                'checks that depend on it',
+        )
+    }
+    canonicalAvailability.set(ref, available)
+    return available
 }
 
 function checksum(contents) {
@@ -67,6 +107,7 @@ function migrationDirectory(file) {
 }
 
 function canonicalBackupMigrations() {
+    if (!canonicalAvailable(canonicalBackupRef, 'backup')) return new Map()
     return new Map(
         [...migrationMapAt(canonicalBackupRef)].filter(([file]) =>
             file.startsWith('packages/app-lib/backup_migrations/'),
@@ -186,11 +227,28 @@ function publishedReleases() {
 function auditPublishedReleases(currentRef) {
     const failures = []
     const warnings = []
+    if (!canonicalAvailable(canonicalBootstrap.ref, 'bootstrap', [canonicalBootstrap.tag])) {
+        console.warn(
+            'Migration guard notice: no canonical bootstrap snapshot is available, so the ' +
+                'published-release migration audit is skipped',
+        )
+        return
+    }
     const canonical = migrationMapAt(canonicalBootstrap.ref)
     const backupCanonical = canonicalBackupMigrations()
     validateMigrationSet(canonical, failures)
 
-    for (const release of publishedReleases()) {
+    let releases = []
+    try {
+        releases = publishedReleases()
+    } catch (error) {
+        console.warn(
+            `Migration guard notice: could not list published releases (${error.message}); ` +
+                'auditing the working tree against the canonical snapshot only',
+        )
+    }
+
+    for (const release of releases) {
         if (release.tagName === canonicalBootstrap.tag) continue
 
         const released = migrationMapAt(release.tagName)
